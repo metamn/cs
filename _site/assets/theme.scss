@@ -35,21 +35,25 @@ body {
           margin-bottom: $pad;
         }
       }
+      
+      table {
+        font-size: 50%;
+      }
+    }
+    
+    ul {
+      li {
+        padding: $pad/2 0;
+        border-bottom: 1px dotted;
+        
+        &.last {
+          border-bottom: none;
+        }
+      }
     }
     
     nav {
       background: $pink;
-      
-      ul {
-        li {
-          padding: $pad/2 0;
-          border-bottom: 1px dotted;
-          
-          &.last {
-            border-bottom: none;
-          }
-        }
-      }
     }
     
     section, nav {
@@ -57,7 +61,7 @@ body {
     }
     
     header {
-      margin-top: $pad*3;
+      margin-top: $pad*5;
       
       font-family: 'Lato', sans-serif;
       

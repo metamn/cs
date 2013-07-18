@@ -341,44 +341,48 @@ body .container section article figcaption {
 body .container section article figure {
   margin-bottom: 1.25em;
 }
-/* line 40, theme.scss */
-body .container nav {
-  background: #f3aaaa;
+/* line 39, theme.scss */
+body .container section table {
+  font-size: 50%;
 }
-/* line 44, theme.scss */
-body .container nav ul li {
+/* line 45, theme.scss */
+body .container ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 48, theme.scss */
-body .container nav ul li.last {
+/* line 49, theme.scss */
+body .container ul li.last {
   border-bottom: none;
 }
 /* line 55, theme.scss */
+body .container nav {
+  background: #f3aaaa;
+}
+/* line 59, theme.scss */
 body .container section, body .container nav {
   padding-left: 38.196%;
 }
-/* line 59, theme.scss */
+/* line 63, theme.scss */
 body .container header {
-  margin-top: 3.75em;
+  margin-top: 6.25em;
   font-family: 'Lato', sans-serif;
 }
-/* line 64, theme.scss */
+/* line 68, theme.scss */
 body .container header h1 {
   padding-bottom: 0;
 }
-/* line 68, theme.scss */
+/* line 72, theme.scss */
 body .container header h2 {
   padding-top: 0;
 }
-/* line 72, theme.scss */
+/* line 76, theme.scss */
 body .container header a.contact {
   border-bottom: 1px dotted;
 }
 
 /* Highlighting active navigation item
 */
-/* line 97, theme.scss */
+/* line 101, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -386,7 +390,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 109, theme.scss */
+/* line 113, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -394,7 +398,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 121, theme.scss */
+/* line 125, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -402,7 +406,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 133, theme.scss */
+/* line 137, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
