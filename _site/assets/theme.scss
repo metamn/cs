@@ -8,9 +8,6 @@ $pink: #F3AAAA;
 
 
 
-/* All pages
-*/
-
 body {
   color: $color;
   background: $background;
@@ -21,63 +18,59 @@ body {
       text-decoration: none;
     }
     
-  }
-}
-
-
-
-
-/* Startpage
-*/
-
-body.startpage {
-  .container {
-    #content {
+    section {
+      width: $major;
       font-size: larger;
       
-      section {
-        width: $major;
-        
-        font-family: 'Old Standard TT', serif;
-        font-size: 3em;
-        font-weight: 300;
-      }
+      font-family: 'Old Standard TT', serif;
+      font-size: 3em;
+      font-weight: 300;
       
-      nav {
-        background: $pink;
+      article {
+        figcaption {
+          font-size: 33%;
+        }
         
-        ul {
-          li {
-            padding: $pad/2 0;
-            border-bottom: 1px dotted;
-            
-            &.last {
-              border-bottom: none;
-            }
+        figure {
+          margin-bottom: $pad;
+        }
+      }
+    }
+    
+    nav {
+      background: $pink;
+      
+      ul {
+        li {
+          padding: $pad/2 0;
+          border-bottom: 1px dotted;
+          
+          &.last {
+            border-bottom: none;
           }
         }
       }
+    }
+    
+    section, nav {
+      padding-left: $minor;
+    }
+    
+    header {
+      margin-top: $pad*3;
       
-      section, nav {
-        padding-left: $minor;
+      font-family: 'Lato', sans-serif;
+      
+      h1 {
+        padding-bottom: 0;
       }
       
-      header {
-        margin-top: $pad*3;
-        
-        font-family: 'Lato', sans-serif;
-        
-        h1 {
-          padding-bottom: 0;
-        }
-        
-        h2 {
-          padding-top: 0;
-        }
-        
-        a.contact {
-          border-bottom: 1px dotted;
-        }
+      h2 {
+        padding-top: 0;
+      }
+      
+      a.contact {
+        border-bottom: 1px dotted;
       }
     }
   }

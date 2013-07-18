@@ -1,14 +1,12 @@
+
+
 body {
   .container {
     width: 90%;
     margin: 0 auto;
-  }
-}
-
-body.startpage {
-  .container {
+    
+    
     header {
-      
       figure {
         max-width: 10em;
         margin-right: $pad;

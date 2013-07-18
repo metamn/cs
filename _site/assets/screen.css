@@ -301,14 +301,13 @@ body .container label.select:after {
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
-/* line 2, layout.scss */
+/* line 4, layout.scss */
 body .container {
   width: 90%;
   margin: 0 auto;
 }
-
-/* line 12, layout.scss */
-body.startpage .container header figure {
+/* line 10, layout.scss */
+body .container header figure {
   max-width: 10em;
   margin-right: 1.25em;
   float: left;
@@ -316,70 +315,70 @@ body.startpage .container header figure {
 
 /* The color scheme
 */
-/* All pages
-*/
-/* line 14, theme.scss */
+/* line 11, theme.scss */
 body {
   color: #363636;
   background: #f1f1f1;
 }
-/* line 19, theme.scss */
+/* line 16, theme.scss */
 body .container a, body .container a:active, body .container a:visited {
   color: #363636;
   text-decoration: none;
 }
-
-/* Startpage
-*/
-/* line 35, theme.scss */
-body.startpage .container #content {
-  font-size: larger;
-}
-/* line 38, theme.scss */
-body.startpage .container #content section {
+/* line 21, theme.scss */
+body .container section {
   width: 61.804%;
+  font-size: larger;
   font-family: 'Old Standard TT', serif;
   font-size: 3em;
   font-weight: 300;
 }
-/* line 46, theme.scss */
-body.startpage .container #content nav {
+/* line 30, theme.scss */
+body .container section article figcaption {
+  font-size: 33%;
+}
+/* line 34, theme.scss */
+body .container section article figure {
+  margin-bottom: 1.25em;
+}
+/* line 40, theme.scss */
+body .container nav {
   background: #f3aaaa;
 }
-/* line 50, theme.scss */
-body.startpage .container #content nav ul li {
+/* line 44, theme.scss */
+body .container nav ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 54, theme.scss */
-body.startpage .container #content nav ul li.last {
+/* line 48, theme.scss */
+body .container nav ul li.last {
   border-bottom: none;
 }
-/* line 61, theme.scss */
-body.startpage .container #content section, body.startpage .container #content nav {
+/* line 55, theme.scss */
+body .container section, body .container nav {
   padding-left: 38.196%;
 }
-/* line 65, theme.scss */
-body.startpage .container #content header {
+/* line 59, theme.scss */
+body .container header {
   margin-top: 3.75em;
   font-family: 'Lato', sans-serif;
 }
-/* line 70, theme.scss */
-body.startpage .container #content header h1 {
+/* line 64, theme.scss */
+body .container header h1 {
   padding-bottom: 0;
 }
-/* line 74, theme.scss */
-body.startpage .container #content header h2 {
+/* line 68, theme.scss */
+body .container header h2 {
   padding-top: 0;
 }
-/* line 78, theme.scss */
-body.startpage .container #content header a.contact {
+/* line 72, theme.scss */
+body .container header a.contact {
   border-bottom: 1px dotted;
 }
 
 /* Highlighting active navigation item
 */
-/* line 104, theme.scss */
+/* line 97, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -387,7 +386,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 116, theme.scss */
+/* line 109, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -395,7 +394,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 128, theme.scss */
+/* line 121, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -403,7 +402,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 140, theme.scss */
+/* line 133, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
