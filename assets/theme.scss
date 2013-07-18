@@ -36,7 +36,8 @@ body {
         }
         
         h1, h2 {
-          max-width: $major;
+          max-width: $major - $margin;
+          margin-left: $margin;
           float: left;
         }
       }

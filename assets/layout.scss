@@ -4,21 +4,21 @@ body {
     margin: 0 auto;
     
     header {
-      width: $minor;
+      width: $minor + $margin;
       float: left;
       position: fixed;
     }
     
     nav {
-      margin-left: $minor;
-      width: $major;
+      margin-left: $minor + $margin;
+      width: $major - $margin;
       float: left;
       position: fixed;
     }
     
     #content {
-      margin-left: $minor;
-      width: $major;
+      margin-left: $minor + $margin;
+      width: $major - $margin;
       float: left;
       position: relative;
       top: $pad*3;
