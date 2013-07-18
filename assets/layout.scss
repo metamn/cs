@@ -1,33 +1,24 @@
 body {
   .container {
-    width: 98%;
+    width: 90%;
     margin: 0 auto;
-    
+  }
+}
+
+body.startpage {
+  .container {
     header {
-      width: $minor + $margin;
+      max-width: $major;
+      margin-right: $pad;
       float: left;
-      position: fixed;
-    }
-    
-    nav {
-      margin-left: $minor + $margin;
-      width: $major - $margin;
-      float: left;
-      position: fixed;
-    }
-    
-    #content {
-      margin-left: $minor + $margin;
-      width: $major - $margin;
-      float: left;
-      position: relative;
-      top: $pad*3;
-    }
-    
-    footer {
+      
+      figure {
+        max-width: 10em;
+        margin-right: $pad;
+        float: left;
+      }
       
     }
-    
   }
 }
 

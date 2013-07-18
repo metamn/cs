@@ -73,21 +73,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 */
 /* line 1, typography.scss */
 body {
-  /* Use Serif for long text */
-  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-family: 'Old Standard TT', serif;
   font-size: 100%;
   line-height: 1.25;
 }
-/* line 9, typography.scss */
+/* line 7, typography.scss */
 body .container {
-  /* Use Sans serif for non-long text */
   /* Headings
    -----------------------------------------------
   */
   /* Headings dont differ by size but by decoration
    - vertical rhythm is maintained by padding
   */
-  /* Lower headings are like body text but upper cased */
   /* Block level elements
   // -----------------------------------------------
   */
@@ -119,42 +116,26 @@ body .container {
     - additionally padding & relative positioning must be overwritten later in the new context
   */
 }
-/* line 12, typography.scss */
+/* line 8, typography.scss */
 body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
-/* line 27, typography.scss */
+/* line 20, typography.scss */
 body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
   font-size: 1.5em;
   padding: 1.25em 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 35, typography.scss */
-body .container h4, body .container h5, body .container h6 {
-  font-size: 100%;
-  /* small caps is not enough to distinguish header from body text */
-  text-transform: uppercase;
-}
-/* line 42, typography.scss */
-body .container h1, body .container h4 {
-  font-weight: bold;
-}
-/* line 46, typography.scss */
+/* line 28, typography.scss */
 body .container h2 {
-  font-weight: bold;
-  font-style: italic;
+  font-weight: 300;
 }
-/* line 51, typography.scss */
-body .container h6 {
-  text-transform: none;
-  font-variant: small-caps;
-}
-/* line 63, typography.scss */
+/* line 43, typography.scss */
 body .container p + p {
   margin-top: 1.25em;
 }
-/* line 68, typography.scss */
+/* line 48, typography.scss */
 body .container q, body .container blockquote {
   display: block;
   margin: 2.5em;
@@ -163,70 +144,70 @@ body .container q, body .container blockquote {
   font-style: italic;
   font-size: larger;
 }
-/* line 80, typography.scss */
+/* line 60, typography.scss */
 body .container address {
   font-variant: small-caps;
 }
-/* line 89, typography.scss */
+/* line 69, typography.scss */
 body .container ul, body .container menu, body .container dir, body .container ol {
   margin: 1.25em;
   list-style-type: square;
 }
-/* line 94, typography.scss */
+/* line 74, typography.scss */
 body .container ol {
   list-style-type: decimal;
 }
-/* line 98, typography.scss */
+/* line 78, typography.scss */
 body .container dl {
   margin: 1.25em 0;
 }
-/* line 101, typography.scss */
+/* line 81, typography.scss */
 body .container dl dt {
   font-weight: bold;
   text-transform: uppercase;
   margin: 1.25em 0;
 }
-/* line 106, typography.scss */
+/* line 86, typography.scss */
 body .container dl dd {
   margin: 0.3125em;
   margin-bottom: 0.625em;
 }
-/* line 111, typography.scss */
+/* line 91, typography.scss */
 body .container dl dd + dt {
   margin-top: 2.5em;
 }
-/* line 123, typography.scss */
+/* line 103, typography.scss */
 body .container table {
   margin: 1.25em 0 2.5em;
 }
-/* line 128, typography.scss */
+/* line 108, typography.scss */
 body .container table thead tr td {
   font-weight: bold;
 }
-/* line 134, typography.scss */
+/* line 114, typography.scss */
 body .container table tbody {
   border-top: 1px dotted;
   border-bottom: 1px dotted;
 }
-/* line 139, typography.scss */
+/* line 119, typography.scss */
 body .container table td, body .container table th, body .container table tr {
   text-align: left;
   vertical-align: top;
   padding: 1.25em;
 }
-/* line 145, typography.scss */
+/* line 125, typography.scss */
 body .container table td {
   border-bottom: 1px solid;
 }
-/* line 156, typography.scss */
+/* line 136, typography.scss */
 body .container em, body .container i {
   font-style: italic;
 }
-/* line 160, typography.scss */
+/* line 140, typography.scss */
 body .container strong, body .container b {
   font-weight: bold;
 }
-/* line 173, typography.scss */
+/* line 153, typography.scss */
 body .container input, body .container textarea, body .container select {
   border: none;
   outline: 0;
@@ -235,49 +216,49 @@ body .container input, body .container textarea, body .container select {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/* line 184, typography.scss */
+/* line 164, typography.scss */
 body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
   border: 1px solid transparent;
   border-bottom: 1px solid;
   font-style: italic;
   color: gray;
 }
-/* line 190, typography.scss */
+/* line 170, typography.scss */
 body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
   color: black;
   font-style: normal;
   border: 1px solid #ccc;
   border-bottom: 1px solid;
 }
-/* line 198, typography.scss */
+/* line 178, typography.scss */
 body .container input[type='submit'] {
   background: black;
   color: lightgray;
   padding: 0.625em;
 }
-/* line 203, typography.scss */
+/* line 183, typography.scss */
 body .container input[type='submit']:hover {
   cursor: pointer;
   color: white;
 }
-/* line 217, typography.scss */
+/* line 197, typography.scss */
 body .container input[type='radio'], body .container input[type='checkbox'] {
   display: none;
 }
-/* line 220, typography.scss */
+/* line 200, typography.scss */
 body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
   display: inline-block;
 }
-/* line 225, typography.scss */
+/* line 205, typography.scss */
 body .container input[type='radio'] + label:after {
   content: '\2610';
   margin-right: 0.625em;
 }
-/* line 229, typography.scss */
+/* line 209, typography.scss */
 body .container input[type='radio']:checked + label:after {
   content: '\25a3';
 }
-/* line 234, typography.scss */
+/* line 214, typography.scss */
 body .container input[type='checkbox'] + label:before {
   content: '\2610';
   margin-right: 0.3125em;
@@ -286,18 +267,18 @@ body .container input[type='checkbox'] + label:before {
   vertical-align: top;
   color: lightgray;
 }
-/* line 245, typography.scss */
+/* line 225, typography.scss */
 body .container input[type='checkbox']:checked + label:before {
   content: '\2611';
   color: black;
 }
-/* line 258, typography.scss */
+/* line 238, typography.scss */
 body .container select {
   border-bottom: 1px solid gray;
   cursor: pointer;
   width: 100%;
 }
-/* line 263, typography.scss */
+/* line 243, typography.scss */
 body .container label.select:after {
   content: '\003E';
   float: right;
@@ -322,96 +303,77 @@ body .container label.select:after {
 */
 /* line 2, layout.scss */
 body .container {
-  width: 98%;
+  width: 90%;
   margin: 0 auto;
 }
-/* line 6, layout.scss */
-body .container header {
-  width: 43.196%;
+
+/* line 10, layout.scss */
+body.startpage .container header {
+  max-width: 61.804%;
+  margin-right: 1.25em;
   float: left;
-  position: fixed;
 }
-/* line 12, layout.scss */
-body .container nav {
-  margin-left: 43.196%;
-  width: 56.804%;
+/* line 15, layout.scss */
+body.startpage .container header figure {
+  max-width: 10em;
+  margin-right: 1.25em;
   float: left;
-  position: fixed;
-}
-/* line 19, layout.scss */
-body .container #content {
-  margin-left: 43.196%;
-  width: 56.804%;
-  float: left;
-  position: relative;
-  top: 3.75em;
 }
 
 /* The color scheme
 */
 /* All pages
 */
-/* line 13, theme.scss */
+/* line 14, theme.scss */
 body {
-  color: #c2c2c2;
-  background: #363636;
+  color: #363636;
+  background: #f1f1f1;
 }
-/* line 18, theme.scss */
+/* line 19, theme.scss */
 body .container a, body .container a:active, body .container a:visited {
-  color: #c2c2c2;
+  color: #363636;
   text-decoration: none;
-}
-/* line 25, theme.scss */
-body .container header hgroup figure, body .container header hgroup h1, body .container header hgroup h2, body .container header hgroup h3 {
-  display: inline-block;
-}
-/* line 29, theme.scss */
-body .container header hgroup figure {
-  max-width: 38.196%;
-  float: left;
-}
-/* line 33, theme.scss */
-body .container header hgroup figure img {
-  max-width: 100%;
-}
-/* line 38, theme.scss */
-body .container header hgroup h1, body .container header hgroup h2 {
-  max-width: 56.804%;
-  margin-left: 5%;
-  float: left;
-}
-/* line 47, theme.scss */
-body .container nav ul {
-  display: block;
-  margin: 0;
-}
-/* line 4, mixins.scss */
-body .container nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 0;
-  float: left;
-  margin-right: 1.25em;
-}
-/* line 11, mixins.scss */
-body .container nav ul li.last {
-  margin-right: 0;
 }
 
 /* Startpage
 */
-/* line 69, theme.scss */
-body.csongor-bartus .container nav {
-  display: none;
+/* line 35, theme.scss */
+body.startpage .container header {
+  margin-top: 38.196%;
+  font-family: 'Lato', sans-serif;
 }
-/* line 73, theme.scss */
-body.csongor-bartus .container #content {
-  top: 0;
+/* line 40, theme.scss */
+body.startpage .container header a.contact {
+  border-bottom: 1px dotted;
+}
+/* line 45, theme.scss */
+body.startpage .container #content {
+  font-size: larger;
+}
+/* line 48, theme.scss */
+body.startpage .container #content h1 {
+  width: 61.804%;
+  font-family: 'Old Standard TT', serif;
+  font-size: 3em;
+  font-weight: 300;
+}
+/* line 56, theme.scss */
+body.startpage .container #content nav {
+  background: #f3aaaa;
+}
+/* line 60, theme.scss */
+body.startpage .container #content nav ul li {
+  padding: 0.625em 0;
+  border-bottom: 1px dotted;
+}
+/* line 64, theme.scss */
+body.startpage .container #content nav ul li.last {
+  border-bottom: none;
 }
 
 /* Highlighting active navigation item
 */
-/* line 97, theme.scss */
+/* line 92, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -419,7 +381,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 109, theme.scss */
+/* line 104, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -427,7 +389,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 121, theme.scss */
+/* line 116, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -435,7 +397,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 133, theme.scss */
+/* line 128, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -446,4 +408,9 @@ body.design-and-development .container nav li#design-and-development a {
 /* line 1, common.scss */
 .outline {
   display: none;
+}
+
+/* line 5, common.scss */
+img {
+  max-width: 100%;
 }

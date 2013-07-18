@@ -2,8 +2,9 @@
 */
 
 
-$color: #C2C2C2;
-$background: #363636;
+$color: #363636;
+$background: #f1f1f1;
+$pink: #F3AAAA;
 
 
 
@@ -20,41 +21,6 @@ body {
       text-decoration: none;
     }
     
-    header {
-      hgroup {
-        figure, h1, h2, h3 {
-          display: inline-block;
-        }
-        
-        figure {
-          max-width: $minor;
-          float: left;
-          
-          img {
-            max-width: 100%;
-          }
-        }
-        
-        h1, h2 {
-          max-width: $major - $margin;
-          margin-left: $margin;
-          float: left;
-        }
-      }
-    }   
-    
-    nav {
-      ul {
-        @include list-inline;
-      }
-    }
-    
-    #content {
-      
-    }
-    
-    
-    
   }
 }
 
@@ -64,14 +30,43 @@ body {
 /* Startpage
 */
 
-body.csongor-bartus {
+body.startpage {
   .container {
-    nav {
-      display: none;
+    header {
+      margin-top: $minor;
+      
+      font-family: 'Lato', sans-serif;
+      
+      a.contact {
+        border-bottom: 1px dotted;
+      }
     }
     
     #content {
-      top: 0;
+      font-size: larger;
+      
+      h1 {
+        width: $major;
+        
+        font-family: 'Old Standard TT', serif;
+        font-size: 3em;
+        font-weight: 300;
+      }
+      
+      nav {
+        background: $pink;
+        
+        ul {
+          li {
+            padding: $pad/2 0;
+            border-bottom: 1px dotted;
+            
+            &.last {
+              border-bottom: none;
+            }
+          }
+        }
+      }
     }
   }
 }
