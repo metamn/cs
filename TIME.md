@@ -2,4 +2,6 @@
 
 2013-07-18
 * 2hrs, 09.00 - 11.00, Basic setup
+* 3hrs, 14.00 - 17.00, Content and basic design
+
 
