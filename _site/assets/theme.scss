@@ -32,20 +32,10 @@ body {
 
 body.startpage {
   .container {
-    header {
-      margin-top: $minor;
-      
-      font-family: 'Lato', sans-serif;
-      
-      a.contact {
-        border-bottom: 1px dotted;
-      }
-    }
-    
     #content {
       font-size: larger;
       
-      h1 {
+      section {
         width: $major;
         
         font-family: 'Old Standard TT', serif;
@@ -65,6 +55,28 @@ body.startpage {
               border-bottom: none;
             }
           }
+        }
+      }
+      
+      section, nav {
+        padding-left: $minor;
+      }
+      
+      header {
+        margin-top: $pad*3;
+        
+        font-family: 'Lato', sans-serif;
+        
+        h1 {
+          padding-bottom: 0;
+        }
+        
+        h2 {
+          padding-top: 0;
+        }
+        
+        a.contact {
+          border-bottom: 1px dotted;
         }
       }
     }

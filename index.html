@@ -1,23 +1,24 @@
 ---
-layout: default
+layout: startpage
 title: Csongor Bartus
 class: startpage
 ---
 
 
+<section>
+  <h1>
+    <a href="/" title="{{ site.offer }}">{{ site.offer }}</a>
+  </h1>
 
-<h1>
-  <a href="/" title="{{ site.offer }}">{{ site.offer }}</a>
-</h1>
-
-<aside>
-  From ${{ site.price }} / hour
-</aside>
+  <aside>
+    From ${{ site.price }} / hour
+  </aside>
+</section>
 
 {% include nav.html %}
 
 
-  
+{% include header.html %}
  
 
 <!--

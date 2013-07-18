@@ -307,13 +307,7 @@ body .container {
   margin: 0 auto;
 }
 
-/* line 10, layout.scss */
-body.startpage .container header {
-  max-width: 61.804%;
-  margin-right: 1.25em;
-  float: left;
-}
-/* line 15, layout.scss */
+/* line 12, layout.scss */
 body.startpage .container header figure {
   max-width: 10em;
   margin-right: 1.25em;
@@ -338,42 +332,54 @@ body .container a, body .container a:active, body .container a:visited {
 /* Startpage
 */
 /* line 35, theme.scss */
-body.startpage .container header {
-  margin-top: 38.196%;
-  font-family: 'Lato', sans-serif;
-}
-/* line 40, theme.scss */
-body.startpage .container header a.contact {
-  border-bottom: 1px dotted;
-}
-/* line 45, theme.scss */
 body.startpage .container #content {
   font-size: larger;
 }
-/* line 48, theme.scss */
-body.startpage .container #content h1 {
+/* line 38, theme.scss */
+body.startpage .container #content section {
   width: 61.804%;
   font-family: 'Old Standard TT', serif;
   font-size: 3em;
   font-weight: 300;
 }
-/* line 56, theme.scss */
+/* line 46, theme.scss */
 body.startpage .container #content nav {
   background: #f3aaaa;
 }
-/* line 60, theme.scss */
+/* line 50, theme.scss */
 body.startpage .container #content nav ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 64, theme.scss */
+/* line 54, theme.scss */
 body.startpage .container #content nav ul li.last {
   border-bottom: none;
+}
+/* line 61, theme.scss */
+body.startpage .container #content section, body.startpage .container #content nav {
+  padding-left: 38.196%;
+}
+/* line 65, theme.scss */
+body.startpage .container #content header {
+  margin-top: 3.75em;
+  font-family: 'Lato', sans-serif;
+}
+/* line 70, theme.scss */
+body.startpage .container #content header h1 {
+  padding-bottom: 0;
+}
+/* line 74, theme.scss */
+body.startpage .container #content header h2 {
+  padding-top: 0;
+}
+/* line 78, theme.scss */
+body.startpage .container #content header a.contact {
+  border-bottom: 1px dotted;
 }
 
 /* Highlighting active navigation item
 */
-/* line 92, theme.scss */
+/* line 104, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -381,7 +387,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 104, theme.scss */
+/* line 116, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -389,7 +395,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 116, theme.scss */
+/* line 128, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -397,7 +403,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 128, theme.scss */
+/* line 140, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
