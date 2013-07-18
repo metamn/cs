@@ -1,9 +1,22 @@
 {% include head.html %}
       
 <header>
-  <h1>
-    <a href="/" title="Csongor Bartus">Csongor Bartus</a>
-  </h1>
+  <hgroup>
+    <figure>
+      <a href="/" title="{{ site.name }} | {{ site.strapline }}">
+        <img src="/assets/gravatar-small.jpg" title="{{ site.name }} | {{ site.strapline }}">
+      </a>
+    </figure>
+    <h1>
+      <a href="/" title="{{ site.name }}">{{ site.name }}</a>
+    </h1>
+    <h2>
+      <a href="/" title="{{ site.strapline }}">{{ site.strapline }}</a>
+    </h2>
+    <h2>
+      <a href="/" title="{{ site.offer }}">{{ site.offer }}</a>
+    </h2>
+  </hgroup>
   
   {% include nav.html %}
 </header>
