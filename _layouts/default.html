@@ -13,16 +13,26 @@
     <h2>
       <a href="/" title="{{ site.strapline }}">{{ site.strapline }}</a>
     </h2>
-    <h2>
+    <h3>
       <a href="/" title="{{ site.offer }}">{{ site.offer }}</a>
-    </h2>
+    </h3>
   </hgroup>
   
-  {% include nav.html %}
+  <aside>
+    From ${{ site.price }} / hour
+  </aside>
+  
+  <a href="mailto:bartus.csongor@gmail.com" title="contact">bartus.csongor@gmail.com</a>
 </header>
+
+
+{% include nav.html %}
 
 <section id="content">
   {{ content }}
 </section>
 
-{% include footer.html %}
+</div>
+</body>
+</html>
+

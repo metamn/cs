@@ -322,127 +322,29 @@ body .container label.select:after {
 */
 /* line 2, layout.scss */
 body .container {
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
 }
 /* line 6, layout.scss */
 body .container header {
-  width: 100%;
+  width: 38.196%;
   float: left;
+  position: fixed;
 }
-/* line 9, layout.scss */
-body .container header h1 {
+/* line 12, layout.scss */
+body .container nav {
+  margin-left: 38.196%;
+  width: 61.804%;
   float: left;
-  width: 18.5%;
-}
-/* line 14, layout.scss */
-body .container header nav {
-  float: left;
-  width: 76.5%;
-  margin-top: 2.1875em;
+  position: fixed;
 }
 /* line 19, layout.scss */
-body .container header nav ul {
-  display: block;
-  margin: 0;
-}
-/* line 4, mixins.scss */
-body .container header nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 0;
-  float: left;
-  margin-right: 1.25em;
-}
-/* line 11, mixins.scss */
-body .container header nav ul li.last {
-  margin-right: 0;
-}
-@media only screen and (max-width: 767px) {
-  /* line 23, layout.scss */
-  body .container header nav ul li {
-    margin-right: 0.625em;
-  }
-}
-@media (max-width: 380px) {
-  /* line 31, layout.scss */
-  body .container header h1, body .container header nav {
-    width: 100%;
-    float: left;
-  }
-}
-@media only screen and (min-width: 381px) and (max-width: 767px) {
-  /* line 38, layout.scss */
-  body .container header h1 {
-    width: 37%;
-  }
-  /* line 42, layout.scss */
-  body .container header nav {
-    width: 53%;
-    margin-left: 5%;
-  }
-  /* line 46, layout.scss */
-  body .container header nav li {
-    margin-bottom: 1.25em;
-  }
-}
-/* line 53, layout.scss */
 body .container #content {
-  width: 100%;
+  margin-left: 38.196%;
+  width: 61.804%;
   float: left;
-}
-/* line 56, layout.scss */
-body .container #content #iframe-wrapper {
-  display: block;
-  position: absolute;
-  width: 90%;
-  height: 80%;
-  padding-bottom: 2.5em;
-}
-/* line 65, layout.scss */
-body .container #content #iframe-wrapper iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-/* line 72, layout.scss */
-body .container #content article {
-  width: 100%;
-  float: left;
-  margin-bottom: 1.25em;
-}
-/* line 76, layout.scss */
-body .container #content article figcaption {
-  margin-bottom: 1.25em;
-}
-/* line 81, layout.scss */
-body .container #content article figure img {
-  max-width: 100%;
-}
-@media only screen and (min-width: 1401px) {
-  /* line 81, layout.scss */
-  body .container #content article figure img {
-    max-width: 1400px;
-  }
-}
-/* line 92, layout.scss */
-body .container footer {
-  width: 100%;
-  float: left;
-  margin: 1.25em 0;
-}
-
-/* The frontpage
-*/
-/* line 109, layout.scss */
-body.csongor-bartus .container header h1 {
-  width: 100%;
-  float: left;
-}
-/* line 114, layout.scss */
-body.csongor-bartus .container nav {
-  width: 100%;
-  float: left;
+  position: relative;
+  top: 3.75em;
 }
 
 /* The color scheme
@@ -452,280 +354,52 @@ body.csongor-bartus .container nav {
 /* line 13, theme.scss */
 body {
   color: #c2c2c2;
-  background: url(/assets/background.jpg) #363636;
-  background-size: cover;
+  background: #363636;
 }
-/* line 19, theme.scss */
+/* line 18, theme.scss */
 body .container a, body .container a:active, body .container a:visited {
   color: #c2c2c2;
   text-decoration: none;
 }
-/* line 26, theme.scss */
-body .container nav li.desktop {
-  display: block;
-}
-/* line 30, theme.scss */
-body .container nav li.mobile {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  /* line 35, theme.scss */
-  body .container nav li.desktop {
-    display: none;
-  }
-  /* line 39, theme.scss */
-  body .container nav li.mobile {
-    display: block;
-  }
-}
-/* line 48, theme.scss */
-body .container #content #iframe-wrapper {
-  background: #363636;
-}
-/* line 52, theme.scss */
-body .container #content article {
-  margin-top: 2.5em;
-}
-/* line 55, theme.scss */
-body .container #content article figcaption {
-  margin-bottom: 0.625em;
-}
-@media only screen and (max-width: 767px) {
-  /* line 61, theme.scss */
-  body .container #content dl {
-    background: black;
-    opacity: .9;
-    padding: 0.625em 0.625em 1.25em;
-    max-width: 30em;
-  }
-}
-/* line 72, theme.scss */
-body .container footer a {
-  border-bottom: 1px dotted;
-}
-
-/* The frontpage
-*/
-/* line 89, theme.scss */
-body.csongor-bartus .container {
-  text-align: center;
-}
-/* line 90, theme.scss */
-body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 91, theme.scss */
-body.csongor-bartus .container h1, body.csongor-bartus .container h2, body.csongor-bartus .container h3 {
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 92, theme.scss */
-body.csongor-bartus .container h1 {
-  font-size: 5.53846em;
-  padding: 1em 0;
-}
-/* line 93, theme.scss */
-body.csongor-bartus .container h2 {
-  font-size: 3.42308em;
-  padding: 1.38338em 0;
-}
-/* line 94, theme.scss */
-body.csongor-bartus .container h3 {
-  font-size: 2.61538em;
-  padding: 1.28666em 0;
-}
-@media (max-width: 380px) {
-  /* line 97, theme.scss */
-  body.csongor-bartus .container h1 {
-    font-size: 3.42308em;
-    padding: 1.38338em 0;
-  }
-  /* line 98, theme.scss */
-  body.csongor-bartus .container h2 {
-    font-size: 2.61538em;
-    padding: 1.28666em 0;
-  }
-}
-/* line 104, theme.scss */
-body.csongor-bartus .container h2 {
-  font-family: 'Comfortaa', cursive;
-}
-/* line 108, theme.scss */
-body.csongor-bartus .container h1 {
-  font-family: 'Reenie Beanie', cursive;
-  word-wrap: break-word;
-}
-/* line 113, theme.scss */
-body.csongor-bartus .container p {
-  font-style: italic;
-  letter-spacing: 0.3125em;
-}
-/* line 118, theme.scss */
-body.csongor-bartus .container nav {
-  margin: 1.25em 0;
-}
-/* line 121, theme.scss */
-body.csongor-bartus .container nav ul {
-  list-style: none;
-}
-/* line 124, theme.scss */
-body.csongor-bartus .container nav ul li {
-  padding: 0.625em 0;
-}
-/* line 127, theme.scss */
-body.csongor-bartus .container nav ul li a {
-  padding: 0.625em;
-  border-bottom: 1px outset;
-  width: 17.5em;
+/* line 25, theme.scss */
+body .container header hgroup figure, body .container header hgroup h1, body .container header hgroup h2, body .container header hgroup h3 {
   display: inline-block;
 }
-@media (max-width: 380px) {
-  /* line 127, theme.scss */
-  body.csongor-bartus .container nav ul li a {
-    width: 8.75em;
-  }
+/* line 29, theme.scss */
+body .container header hgroup figure {
+  max-width: 38.196%;
+  float: left;
 }
-
-/* Long text pages
-*/
-/* line 152, theme.scss */
-body.text .container #content {
-  /* Make it readable
-  */
-  max-width: 700px;
-  line-height: 1.5;
-  font-size: larger;
-  /* Put focus on
-  */
-  /* Adjust visual hierarchy
-  */
-  /* Restore expectations
-  */
-  /* Decorations 
-  */
-  /* Highlight text
-  */
-  /* Images
-  */
+/* line 33, theme.scss */
+body .container header hgroup figure img {
+  max-width: 100%;
 }
-/* line 160, theme.scss */
-body.text .container #content ol, body.text .container #content ul {
-  margin-bottom: 2.5em;
+/* line 38, theme.scss */
+body .container header hgroup h1, body .container header hgroup h2 {
+  max-width: 61.804%;
+  float: left;
 }
-/* line 163, theme.scss */
-body.text .container #content ol li, body.text .container #content ul li {
-  margin-bottom: 0.625em;
+/* line 46, theme.scss */
+body .container nav ul {
+  display: block;
+  margin: 0;
 }
-@media only screen and (min-width: 1280px) {
-  /* line 152, theme.scss */
-  body.text .container #content {
-    border-left: 15em solid #1a1a1a;
-    padding: 0 1.25em 3.75em 2.5em;
-    background: #363636;
-  }
+/* line 4, mixins.scss */
+body .container nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 0;
+  float: left;
+  margin-right: 1.25em;
 }
-/* line 181, theme.scss */
-body.text .container #content h3 {
-  padding-bottom: 0;
-}
-/* line 185, theme.scss */
-body.text .container #content h1, body.text .container #content h2, body.text .container #content h3 {
-  line-height: 1.1;
-}
-/* line 189, theme.scss */
-body.text .container #content article {
-  margin-top: 0;
-}
-/* line 196, theme.scss */
-body.text .container #content a, body.text .container #content a:active, body.text .container #content a:visited {
-  border-bottom: 1px dotted;
-}
-/* line 206, theme.scss */
-body.text .container #content span {
-  background: #c2c2c2;
-  color: #363636;
-  padding: 0.15625em;
-  font-style: italic;
-}
-/* line 214, theme.scss */
-body.text .container #content p {
-  /* Separate content blocks
-  */
-}
-/* line 217, theme.scss */
-body.text .container #content p.separator {
-  text-align: center;
-}
-/* line 220, theme.scss */
-body.text .container #content p.separator:after {
-  content: '* * *';
-}
-/* line 226, theme.scss */
-body.text .container #content td {
-  border-color: #434343;
-}
-@media (max-width: 380px) {
-  /* line 232, theme.scss */
-  body.text .container #content table td, body.text .container #content table th, body.text .container #content table tr {
-    padding: 0.3125em;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* line 241, theme.scss */
-  body.text .container #content figure {
-    display: inline-block;
-    max-width: 65em;
-  }
-}
-/* line 247, theme.scss */
-body.text .container #content figure a {
-  border-bottom: none;
-}
-/* line 251, theme.scss */
-body.text .container #content figure.bordered {
-  border: 1px solid #434343;
-}
-/* line 255, theme.scss */
-body.text .container #content figure.spaced {
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-/* line 261, theme.scss */
-body.text .container #content p + figure, body.text .container #content figure + p, body.text .container #content figure + figure {
-  margin-top: 1.25em;
-}
-/* line 265, theme.scss */
-body.text .container #content figcaption {
-  font-size: normal;
-  font-style: italic;
-  margin-bottom: 2.5em;
-}
-
-/* Skills
-*/
-@media only screen and (max-width: 767px) {
-  /* line 280, theme.scss */
-  body.skills {
-    background: #000;
-  }
-}
-@media (max-width: 380px) {
-  /* line 289, theme.scss */
-  body.skills .container #content table td, body.skills .container #content table tr, body.skills .container #content table th {
-    font-size: small;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 289, theme.scss */
-  body.skills .container #content table td, body.skills .container #content table tr, body.skills .container #content table th {
-    padding: 0.3125em;
-  }
+/* line 11, mixins.scss */
+body .container nav ul li.last {
+  margin-right: 0;
 }
 
 /* Highlighting active navigation item
 */
-/* line 320, theme.scss */
+/* line 80, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -733,7 +407,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 332, theme.scss */
+/* line 92, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -741,7 +415,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 344, theme.scss */
+/* line 104, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -749,7 +423,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 356, theme.scss */
+/* line 116, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;
