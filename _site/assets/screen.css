@@ -397,9 +397,20 @@ body .container nav ul li.last {
   margin-right: 0;
 }
 
+/* Startpage
+*/
+/* line 68, theme.scss */
+body.csongor-bartus .container nav {
+  display: none;
+}
+/* line 72, theme.scss */
+body.csongor-bartus .container #content {
+  top: 0;
+}
+
 /* Highlighting active navigation item
 */
-/* line 80, theme.scss */
+/* line 96, theme.scss */
 body.flow .container nav li#flow a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -407,7 +418,7 @@ body.flow .container nav li#flow a {
   border: 1px outset;
 }
 
-/* line 92, theme.scss */
+/* line 108, theme.scss */
 body.skills .container nav li#skills a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -415,7 +426,7 @@ body.skills .container nav li#skills a {
   border: 1px outset;
 }
 
-/* line 104, theme.scss */
+/* line 120, theme.scss */
 body.writing .container nav li#writing a {
   font-weight: bold;
   letter-spacing: 1px;
@@ -423,7 +434,7 @@ body.writing .container nav li#writing a {
   border: 1px outset;
 }
 
-/* line 116, theme.scss */
+/* line 132, theme.scss */
 body.design-and-development .container nav li#design-and-development a {
   font-weight: bold;
   letter-spacing: 1px;

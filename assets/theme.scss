@@ -60,6 +60,22 @@ body {
 
 
 
+/* Startpage
+*/
+
+body.csongor-bartus {
+  .container {
+    nav {
+      display: none;
+    }
+    
+    #content {
+      top: 0;
+    }
+  }
+}
+
+
 
 
 
