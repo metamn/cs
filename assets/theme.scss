@@ -29,24 +29,6 @@ body {
       text-decoration: none;
     }
     
-    section {
-      figcaption {
-        font-size: 33%;
-      }
-      
-      figure {
-        margin-bottom: $pad;
-      }
-      
-      table {
-        font-size: 50%;
-      }
-      
-      blockquote {
-        margin: $pad;
-      }
-    }
-    
     ul {
       padding: $pad 0;
       
@@ -73,8 +55,8 @@ body {
     }
     
     
-    section, nav {
-      padding-left: $minor;
+    ol {
+      margin: 0;
     }
     
     
@@ -82,8 +64,6 @@ body {
       font-family: 'Lato', sans-serif;
       
       hgroup {
-        width: $minor;
-        float: left;
         
         h1 {
           padding-bottom: 0;
@@ -99,8 +79,7 @@ body {
       }
       
       form {
-        width: $major;
-        float: left;
+       
         margin-top: $pad*5;
         
         input[type="submit"] {
@@ -114,37 +93,6 @@ body {
     }
   }
 }
-
-
-
-/* Contact page
-*/
-body.contact {
-  header {
-    form {
-      display: none;
-    }
-  }
-  
-  section {
-    form {
-      font-size: 50%;
-      
-      input, textarea {
-        width: $minor;
-        padding: $pad;
-        display: block;
-        
-        margin-bottom: $pad;
-      }
-      
-      input[type="submit"] {
-        min-width: 10em;
-      }
-    }
-  }
-}
-
 
 
 

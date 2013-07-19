@@ -8,20 +8,41 @@ body {
       display: none;
     }
     
-    article {
+    section {
+      @include align-right;
       
-      header {
-        display: block;
+      article {
+        width: auto;
+        margin-left: 0;
       }
     }
     
+    article {
+      @include align-right;
+    }
+    
+    nav {
+      width: $major;
+      padding-left: $minor;
+    }
+    
+    
     footer {
-      figure {
-        max-width: 10em;
-        margin-right: $pad;
+      section {
+        width: $minor;
         float: left;
+        
+        figure {
+          max-width: 10em;
+          margin-right: $pad;
+          float: left;
+        }
       }
       
+      form {
+        width: $major;
+        margin-left: $minor;
+      }
     }
   }
 }

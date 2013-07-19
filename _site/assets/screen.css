@@ -307,15 +307,49 @@ body .container {
 body .container header {
   display: none;
 }
-/* line 13, layout.scss */
+/* line 11, layout.scss */
+body .container section {
+  width: 61.804%;
+  margin-left: 38.196%;
+}
+/* line 33, mixins.scss */
+body .container section header {
+  display: block;
+}
+/* line 14, layout.scss */
+body .container section article {
+  width: auto;
+  margin-left: 0;
+}
+/* line 20, layout.scss */
+body .container article {
+  width: 61.804%;
+  margin-left: 38.196%;
+}
+/* line 33, mixins.scss */
 body .container article header {
   display: block;
 }
-/* line 19, layout.scss */
-body .container footer figure {
+/* line 24, layout.scss */
+body .container nav {
+  width: 61.804%;
+  padding-left: 38.196%;
+}
+/* line 31, layout.scss */
+body .container footer section {
+  width: 38.196%;
+  float: left;
+}
+/* line 35, layout.scss */
+body .container footer section figure {
   max-width: 10em;
   margin-right: 1.25em;
   float: left;
+}
+/* line 42, layout.scss */
+body .container footer form {
+  width: 61.804%;
+  margin-left: 38.196%;
 }
 
 /* The color scheme
@@ -332,78 +366,55 @@ body .container a, body .container a:active, body .container a:visited {
   color: #363636;
   text-decoration: none;
 }
-/* line 33, theme.scss */
-body .container section figcaption {
-  font-size: 33%;
-}
-/* line 37, theme.scss */
-body .container section figure {
-  margin-bottom: 1.25em;
-}
-/* line 41, theme.scss */
-body .container section table {
-  font-size: 50%;
-}
-/* line 45, theme.scss */
-body .container section blockquote {
-  margin: 1.25em;
-}
-/* line 50, theme.scss */
+/* line 32, theme.scss */
 body .container ul {
   padding: 1.25em 0;
 }
-/* line 53, theme.scss */
+/* line 35, theme.scss */
 body .container ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 58, theme.scss */
+/* line 40, theme.scss */
 body .container ul li a:hover {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
-/* line 63, theme.scss */
+/* line 45, theme.scss */
 body .container ul li.last {
   border-bottom: none;
 }
-/* line 70, theme.scss */
+/* line 52, theme.scss */
 body .container nav {
   background: url(/assets/background.png) #f3aaaa;
   margin: 3.75em 0;
 }
-/* line 76, theme.scss */
-body .container section, body .container nav {
-  padding-left: 38.196%;
+/* line 58, theme.scss */
+body .container ol {
+  margin: 0;
 }
-/* line 81, theme.scss */
+/* line 63, theme.scss */
 body .container header {
   font-family: 'Lato', sans-serif;
 }
-/* line 84, theme.scss */
-body .container header hgroup {
-  width: 38.196%;
-  float: left;
-}
-/* line 88, theme.scss */
+/* line 68, theme.scss */
 body .container header hgroup h1 {
   padding-bottom: 0;
 }
-/* line 92, theme.scss */
+/* line 72, theme.scss */
 body .container header hgroup h2 {
   padding-top: 0;
 }
-/* line 96, theme.scss */
+/* line 76, theme.scss */
 body .container header hgroup a.contact {
   border-bottom: 1px dotted;
 }
-/* line 101, theme.scss */
+/* line 81, theme.scss */
 body .container header form {
-  width: 61.804%;
-  float: left;
   margin-top: 6.25em;
 }
-/* line 106, theme.scss */
+/* line 85, theme.scss */
 body .container header form input[type="submit"] {
   font-size: large;
   padding: 0.625em 1.25em;
@@ -411,52 +422,30 @@ body .container header form input[type="submit"] {
   color: #f1f1f1;
 }
 
-/* Contact page
-*/
-/* line 124, theme.scss */
-body.contact header form {
-  display: none;
-}
-/* line 130, theme.scss */
-body.contact section form {
-  font-size: 50%;
-}
-/* line 133, theme.scss */
-body.contact section form input, body.contact section form textarea {
-  width: 38.196%;
-  padding: 1.25em;
-  display: block;
-  margin-bottom: 1.25em;
-}
-/* line 141, theme.scss */
-body.contact section form input[type="submit"] {
-  min-width: 10em;
-}
-
 /* Highlight menu
 */
-/* line 157, theme.scss */
+/* line 105, theme.scss */
 body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 169, theme.scss */
+/* line 117, theme.scss */
 body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 181, theme.scss */
+/* line 129, theme.scss */
 body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 193, theme.scss */
+/* line 141, theme.scss */
 body.services .container nav li#services a {
   font-weight: bold;
   letter-spacing: 1px;

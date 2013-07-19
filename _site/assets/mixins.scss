@@ -25,6 +25,17 @@
   font-weight: 300;
 }
 
+
+@mixin align-right {
+  width: $major;
+  margin-left: $minor;
+  
+  header {
+    display: block;
+  }
+}
+
+
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
