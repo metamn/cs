@@ -6,3 +6,5 @@
 
 2013-07-19
 * 2.5hrs, 09.30 - 12.00, First refactoring + Contact form
+* 2.5hrs, 14.00 - 16.30, Bugfix + Refactoring + HTML validation
+

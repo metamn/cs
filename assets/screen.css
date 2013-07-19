@@ -367,7 +367,7 @@ body .container article h2 {
   display: none;
 }
 /* line 34, theme.scss */
-body .container article table, body .container article ul, body .container article ol {
+body .container article table, body .container article ul, body .container article ol, body .container article aside {
   font-size: 1.5em;
 }
 /* line 38, theme.scss */
