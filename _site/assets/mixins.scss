@@ -100,7 +100,7 @@ $breakpoint-big: 1400px !default;
 	}
 }
 @mixin small-screen-and-up {
-	@media only screen and (min-width : $breakpoint-tablet + 1) {
+	@media only screen and (min-width : $breakpoint-small + 1) {
 		@content;
 	}
 }

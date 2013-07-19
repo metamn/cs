@@ -311,38 +311,65 @@ body .container section, body .container nav, body .container footer {
   width: 100%;
   float: left;
 }
-/* line 11, layout.scss */
-body .container section {
+@media only screen and (min-width: 1025px) {
+  /* line 11, layout.scss */
+  body .container section {
+    width: 100%;
+    float: left;
+    width: 61.804%;
+    margin-left: 38.196%;
+  }
+  /* line 22, mixins.scss */
+  body .container section header {
+    display: block;
+  }
+}
+/* line 18, layout.scss */
+body .container nav ul {
+  padding-left: 1.25em !important;
+}
+@media only screen and (min-width: 1025px) {
+  /* line 17, layout.scss */
+  body .container nav {
+    width: 61.804%;
+    padding-left: 38.196%;
+    float: left;
+  }
+  /* line 27, layout.scss */
+  body .container nav ul {
+    padding-left: 0;
+  }
+}
+/* line 35, layout.scss */
+body .container footer aside {
   width: 100%;
   float: left;
-  width: 61.804%;
-  margin-left: 38.196%;
 }
-/* line 22, mixins.scss */
-body .container section header {
-  display: block;
+@media only screen and (min-width: 1025px) {
+  /* line 35, layout.scss */
+  body .container footer aside {
+    width: 38.196%;
+    float: left;
+  }
 }
-/* line 15, layout.scss */
-body .container nav {
-  width: 61.804%;
-  padding-left: 38.196%;
-  float: left;
-}
-/* line 23, layout.scss */
-body .container footer aside {
-  width: 38.196%;
-  float: left;
-}
-/* line 27, layout.scss */
+/* line 43, layout.scss */
 body .container footer aside figure {
   max-width: 10em;
   margin-right: 1.25em;
   float: left;
 }
-/* line 34, layout.scss */
+/* line 50, layout.scss */
 body .container footer form {
-  width: 61.804%;
-  margin-left: 38.196%;
+  width: 100%;
+  float: left;
+  margin: 0.625em 0;
+}
+@media only screen and (min-width: 1025px) {
+  /* line 50, layout.scss */
+  body .container footer form {
+    width: 61.804%;
+    margin-left: 38.196%;
+  }
 }
 
 /* The color scheme
@@ -362,15 +389,47 @@ body .container article h1, body .container article blockquote, body .container 
   font-size: 3em;
   font-weight: 300;
 }
-/* line 30, theme.scss */
+@media only screen and (max-width: 1023px) {
+  /* line 31, theme.scss */
+  body .container article blockquote {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 1.25em;
+  }
+}
+/* line 38, theme.scss */
 body .container article h2 {
   display: none;
 }
-/* line 34, theme.scss */
+/* line 42, theme.scss */
 body .container article table, body .container article ul, body .container article ol, body .container article aside {
   font-size: 1.5em;
 }
-/* line 38, theme.scss */
+@media only screen and (max-width: 1023px) {
+  /* line 46, theme.scss */
+  body .container article table {
+    font-size: small;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* line 46, theme.scss */
+  body .container article table {
+    font-size: smaller;
+  }
+}
+@media only screen and (min-width: 381px) and (max-width: 767px) {
+  /* line 56, theme.scss */
+  body .container article table td, body .container article table th, body .container article table tr {
+    padding: 0.625em;
+  }
+}
+@media (max-width: 380px) {
+  /* line 62, theme.scss */
+  body .container article table td, body .container article table th, body .container article table tr {
+    padding: 0.15625em;
+  }
+}
+/* line 70, theme.scss */
 body .container article ul {
   padding: 1.25em 0;
 }
@@ -389,20 +448,20 @@ body .container article ul li a:hover {
 body .container article ul li.last {
   border-bottom: none;
 }
-/* line 42, theme.scss */
+/* line 74, theme.scss */
 body .container article figure {
   margin-bottom: 5em;
 }
-/* line 45, theme.scss */
+/* line 77, theme.scss */
 body .container article figure figcaption {
   padding: 0.625em 0;
 }
-/* line 52, theme.scss */
+/* line 84, theme.scss */
 body .container nav {
   background: url(/assets/background.png) #f3aaaa;
   margin: 3.75em 0;
 }
-/* line 56, theme.scss */
+/* line 88, theme.scss */
 body .container nav ul {
   padding: 1.25em 0;
 }
@@ -421,41 +480,47 @@ body .container nav ul li a:hover {
 body .container nav ul li.last {
   border-bottom: none;
 }
-/* line 62, theme.scss */
+/* line 94, theme.scss */
 body .container ol {
   margin: 0;
 }
-/* line 65, theme.scss */
+/* line 97, theme.scss */
 body .container ol input, body .container ol textarea {
   width: 38.196%;
   margin-bottom: 1.25em;
   padding: 0.625em;
 }
-/* line 72, theme.scss */
+@media only screen and (max-width: 1023px) {
+  /* line 97, theme.scss */
+  body .container ol input, body .container ol textarea {
+    width: 94%;
+  }
+}
+/* line 108, theme.scss */
 body .container ol input[type="submit"] {
   width: 10em;
 }
-/* line 78, theme.scss */
+/* line 114, theme.scss */
 body .container footer {
   font-family: 'Lato', sans-serif;
 }
-/* line 82, theme.scss */
+/* line 118, theme.scss */
 body .container footer aside h1 {
   padding-bottom: 0;
 }
-/* line 86, theme.scss */
+/* line 122, theme.scss */
 body .container footer aside h2 {
   padding-top: 0;
 }
-/* line 90, theme.scss */
+/* line 126, theme.scss */
 body .container footer aside a.contact {
   border-bottom: 1px dotted;
 }
-/* line 95, theme.scss */
+/* line 131, theme.scss */
 body .container footer form {
   margin-top: 2.5em;
 }
-/* line 98, theme.scss */
+/* line 134, theme.scss */
 body .container footer form input[type="submit"] {
   font-size: large;
   padding: 0.625em 1.25em;
@@ -465,28 +530,28 @@ body .container footer form input[type="submit"] {
 
 /* Highlight menu
 */
-/* line 118, theme.scss */
+/* line 154, theme.scss */
 body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 130, theme.scss */
+/* line 166, theme.scss */
 body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 142, theme.scss */
+/* line 178, theme.scss */
 body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 154, theme.scss */
+/* line 190, theme.scss */
 body.services .container nav li#services a {
   font-weight: bold;
   letter-spacing: 1px;

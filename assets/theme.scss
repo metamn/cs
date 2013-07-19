@@ -27,6 +27,14 @@ body {
         @include large-fonts;
       }
       
+      @include small-screen-and-below {
+        blockquote {
+          font-size: 1.5em;
+          margin: 0;
+          margin-bottom: $pad;
+        }
+      }
+      
       h2 {
         display: none;
       }
@@ -34,6 +42,30 @@ body {
       table, ul, ol, aside {
         font-size: 1.5em;
       }
+      
+      table {
+        @include small-screen-and-below {
+          font-size: small;
+        }
+        
+        @include small-screen {
+          font-size: smaller;
+        }
+        
+        @include tablet {
+          td, th, tr {
+            padding: $pad/2;
+          }
+        }
+        
+        @include mobile {
+          td, th, tr {
+            padding: $pad/8;
+          }
+        }
+      }
+      
+      
       
       ul {
         @include list;
@@ -64,6 +96,10 @@ body {
       
       input, textarea {
         width: $minor;
+        
+        @include small-screen-and-below {
+          width: 94%;
+        }
           
         margin-bottom: $pad;
         padding: $pad/2;

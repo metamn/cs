@@ -9,20 +9,36 @@ body {
     }
     
     section {
-      @include align-right;
+      @include small-screen-and-up {
+        @include align-right;
+      }
     }
     
     nav {
-      width: $major;
-      padding-left: $minor;
-      float: left;
+      ul {
+        padding-left: $pad !important;
+      }
+      
+      @include small-screen-and-up {
+        width: $major;
+        padding-left: $minor;
+        float: left;
+        
+        ul {
+          padding-left: 0;
+        }
+      }
     }
     
     
     footer {
       aside {
-        width: $minor;
-        float: left;
+        @include block;
+        
+        @include small-screen-and-up {
+          width: $minor;
+          float: left;
+        }
         
         figure {
           max-width: 10em;
@@ -32,8 +48,13 @@ body {
       }
       
       form {
-        width: $major;
-        margin-left: $minor;
+        @include block;
+        margin: $pad/2 0;
+        
+        @include small-screen-and-up {
+          width: $major;
+          margin-left: $minor;
+        }
       }
     }
   }
