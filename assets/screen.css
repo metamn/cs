@@ -358,7 +358,7 @@ body .container a, body .container a:active, body .container a:visited {
   text-decoration: none;
 }
 /* line 26, theme.scss */
-body .container article h1, body .container article blockquote, body .container article footer {
+body .container article h1, body .container article blockquote, body .container article aside {
   font-size: 3em;
   font-weight: 300;
 }
@@ -367,7 +367,7 @@ body .container article h2 {
   display: none;
 }
 /* line 34, theme.scss */
-body .container article table, body .container article ul {
+body .container article table, body .container article ul, body .container article ol {
   font-size: 1.5em;
 }
 /* line 38, theme.scss */
@@ -393,12 +393,16 @@ body .container article ul li.last {
 body .container article figure {
   margin-bottom: 5em;
 }
-/* line 48, theme.scss */
+/* line 45, theme.scss */
+body .container article figure figcaption {
+  padding: 0.625em 0;
+}
+/* line 52, theme.scss */
 body .container nav {
   background: url(/assets/background.png) #f3aaaa;
   margin: 3.75em 0;
 }
-/* line 52, theme.scss */
+/* line 56, theme.scss */
 body .container nav ul {
   padding: 1.25em 0;
 }
@@ -417,31 +421,41 @@ body .container nav ul li a:hover {
 body .container nav ul li.last {
   border-bottom: none;
 }
-/* line 58, theme.scss */
+/* line 62, theme.scss */
 body .container ol {
   margin: 0;
 }
-/* line 63, theme.scss */
+/* line 65, theme.scss */
+body .container ol input, body .container ol textarea {
+  width: 38.196%;
+  margin-bottom: 1.25em;
+  padding: 0.625em;
+}
+/* line 72, theme.scss */
+body .container ol input[type="submit"] {
+  width: 10em;
+}
+/* line 78, theme.scss */
 body .container footer {
   font-family: 'Lato', sans-serif;
 }
-/* line 67, theme.scss */
+/* line 82, theme.scss */
 body .container footer aside h1 {
   padding-bottom: 0;
 }
-/* line 71, theme.scss */
+/* line 86, theme.scss */
 body .container footer aside h2 {
   padding-top: 0;
 }
-/* line 75, theme.scss */
+/* line 90, theme.scss */
 body .container footer aside a.contact {
   border-bottom: 1px dotted;
 }
-/* line 80, theme.scss */
+/* line 95, theme.scss */
 body .container footer form {
   margin-top: 2.5em;
 }
-/* line 83, theme.scss */
+/* line 98, theme.scss */
 body .container footer form input[type="submit"] {
   font-size: large;
   padding: 0.625em 1.25em;
@@ -451,28 +465,28 @@ body .container footer form input[type="submit"] {
 
 /* Highlight menu
 */
-/* line 103, theme.scss */
+/* line 118, theme.scss */
 body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 115, theme.scss */
+/* line 130, theme.scss */
 body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 127, theme.scss */
+/* line 142, theme.scss */
 body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 139, theme.scss */
+/* line 154, theme.scss */
 body.services .container nav li#services a {
   font-weight: bold;
   letter-spacing: 1px;
