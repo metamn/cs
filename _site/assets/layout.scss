@@ -4,26 +4,8 @@ body {
     width: 90%;
     margin: 0 auto;
     
-    header {
-      display: none;
-    }
-    
-    section {
-      @include align-right;
-      
-      article {
-        width: auto;
-        margin-left: 0;
-      }
-    }
-    
-    article {
-      @include align-right;
-    }
-    
-    nav {
-      width: $major;
-      padding-left: $minor;
+    section, article, nav, footer {
+      @include block;
     }
     
     

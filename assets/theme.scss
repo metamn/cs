@@ -8,14 +8,6 @@ $pink: #F3AAAA;
 
 
 
-/* Highlighting active navigation item
-*/
-
-@mixin highlight {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: $pad/2;
-}
 
 
 
@@ -29,29 +21,16 @@ body {
       text-decoration: none;
     }
     
-    ul {
-      padding: $pad 0;
-      
-      li {
-        padding: $pad/2 0;
-        border-bottom: 1px dotted;
-        
-        a {
-          &:hover {
-            @include highlight;
-          }
-        }
-        
-        &.last {
-          border-bottom: none;
-        }
-      }
-    }
+    
     
     
     nav {
       background: url(/assets/background.png) $pink;
       margin: $pad*3 0;
+      
+      ul {
+        @include list;
+      }
     }
     
     
