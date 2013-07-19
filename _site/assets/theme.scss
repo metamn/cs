@@ -128,10 +128,39 @@ body {
 
 
 
+/* Contact page
+*/
+body.contact {
+  header {
+    form {
+      display: none;
+    }
+  }
+  
+  section {
+    form {
+      font-size: 50%;
+      
+      input, textarea {
+        width: $minor;
+        padding: $pad;
+        display: block;
+        
+        margin-bottom: $pad;
+      }
+      
+      input[type="submit"] {
+        min-width: 10em;
+      }
+    }
+  }
+}
 
 
 
 
+/* Highlight menu
+*/
 body.identity {
   .container {
     nav {

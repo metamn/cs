@@ -415,28 +415,52 @@ body .container header form input[type="submit"] {
   color: #f1f1f1;
 }
 
-/* line 139, theme.scss */
+/* Contact page
+*/
+/* line 135, theme.scss */
+body.contact header form {
+  display: none;
+}
+/* line 141, theme.scss */
+body.contact section form {
+  font-size: 50%;
+}
+/* line 144, theme.scss */
+body.contact section form input, body.contact section form textarea {
+  width: 38.196%;
+  padding: 1.25em;
+  display: block;
+  margin-bottom: 1.25em;
+}
+/* line 152, theme.scss */
+body.contact section form input[type="submit"] {
+  min-width: 10em;
+}
+
+/* Highlight menu
+*/
+/* line 168, theme.scss */
 body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 151, theme.scss */
+/* line 180, theme.scss */
 body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 163, theme.scss */
+/* line 192, theme.scss */
 body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 175, theme.scss */
+/* line 204, theme.scss */
 body.services .container nav li#services a {
   font-weight: bold;
   letter-spacing: 1px;
