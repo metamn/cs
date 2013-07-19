@@ -8,6 +8,20 @@ $pink: #F3AAAA;
 
 
 
+/* Highlighting active navigation item
+*/
+
+@mixin highlight {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: $pad/2;
+}
+
+
+
+
+
+
 body {
   color: $color;
   background: $background;
@@ -26,25 +40,36 @@ body {
       font-size: 3em;
       font-weight: 300;
       
-      article {
-        figcaption {
-          font-size: 33%;
-        }
-        
-        figure {
-          margin-bottom: $pad;
-        }
+      figcaption {
+        font-size: 33%;
+      }
+      
+      figure {
+        margin-bottom: $pad;
       }
       
       table {
         font-size: 50%;
       }
+      
+      blockquote {
+        margin: $pad;
+      }
     }
     
     ul {
+      font-size: large;
+      padding: $pad 0;
+      
       li {
         padding: $pad/2 0;
         border-bottom: 1px dotted;
+        
+        a {
+          &:hover {
+            @include highlight;
+          }
+        }
         
         &.last {
           border-bottom: none;
@@ -52,29 +77,50 @@ body {
       }
     }
     
+    
     nav {
-      background: $pink;
+      background: url(/assets/background.png) $pink;
+      margin: $pad*3 0;
     }
+    
     
     section, nav {
       padding-left: $minor;
     }
     
+    
     header {
-      margin-top: $pad*5;
-      
       font-family: 'Lato', sans-serif;
       
-      h1 {
-        padding-bottom: 0;
+      hgroup {
+        width: $minor;
+        float: left;
+        
+        h1 {
+          padding-bottom: 0;
+        }
+        
+        h2 {
+          padding-top: 0;
+        }
+        
+        a.contact {
+          border-bottom: 1px dotted;
+        }
       }
       
-      h2 {
-        padding-top: 0;
-      }
-      
-      a.contact {
-        border-bottom: 1px dotted;
+      form {
+        width: $major;
+        float: left;
+        margin-top: $pad*5;
+        
+        input[type="submit"] {
+          font-size: large;
+          padding: $pad/2 $pad;
+          
+          background: $color;
+          color: $background;
+        }
       }
     }
   }
@@ -84,20 +130,12 @@ body {
 
 
 
-/* Highlighting active navigation item
-*/
 
-@mixin highlight {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: $pad/2;
-  border: 1px outset;
-}
 
-body.flow {
+body.identity {
   .container {
     nav {
-      li#flow {
+      li#identity {
         a {
           @include highlight;
         }
@@ -106,10 +144,10 @@ body.flow {
   }
 }
 
-body.skills {
+body.design {
   .container {
     nav {
-      li#skills {
+      li#design {
         a {
           @include highlight;
         }
@@ -118,10 +156,10 @@ body.skills {
   }
 }
 
-body.writing {
+body.development {
   .container {
     nav {
-      li#writing {
+      li#development {
         a {
           @include highlight;
         }
@@ -130,10 +168,10 @@ body.writing {
   }
 }
 
-body.design-and-development {
+body.services {
   .container {
     nav {
-      li#design-and-development {
+      li#services {
         a {
           @include highlight;
         }

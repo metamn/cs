@@ -315,17 +315,19 @@ body .container header figure {
 
 /* The color scheme
 */
-/* line 11, theme.scss */
+/* Highlighting active navigation item
+*/
+/* line 25, theme.scss */
 body {
   color: #363636;
   background: #f1f1f1;
 }
-/* line 16, theme.scss */
+/* line 30, theme.scss */
 body .container a, body .container a:active, body .container a:visited {
   color: #363636;
   text-decoration: none;
 }
-/* line 21, theme.scss */
+/* line 35, theme.scss */
 body .container section {
   width: 61.804%;
   font-size: larger;
@@ -333,85 +335,112 @@ body .container section {
   font-size: 3em;
   font-weight: 300;
 }
-/* line 30, theme.scss */
-body .container section article figcaption {
+/* line 43, theme.scss */
+body .container section figcaption {
   font-size: 33%;
 }
-/* line 34, theme.scss */
-body .container section article figure {
+/* line 47, theme.scss */
+body .container section figure {
   margin-bottom: 1.25em;
 }
-/* line 39, theme.scss */
+/* line 51, theme.scss */
 body .container section table {
   font-size: 50%;
 }
-/* line 45, theme.scss */
+/* line 55, theme.scss */
+body .container section blockquote {
+  margin: 1.25em;
+}
+/* line 60, theme.scss */
+body .container ul {
+  font-size: large;
+  padding: 1.25em 0;
+}
+/* line 64, theme.scss */
 body .container ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 49, theme.scss */
+/* line 69, theme.scss */
+body .container ul li a:hover {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+/* line 74, theme.scss */
 body .container ul li.last {
   border-bottom: none;
 }
-/* line 55, theme.scss */
+/* line 81, theme.scss */
 body .container nav {
-  background: #f3aaaa;
+  background: url(/assets/background.png) #f3aaaa;
+  margin: 3.75em 0;
 }
-/* line 59, theme.scss */
+/* line 87, theme.scss */
 body .container section, body .container nav {
   padding-left: 38.196%;
 }
-/* line 63, theme.scss */
+/* line 92, theme.scss */
 body .container header {
-  margin-top: 6.25em;
   font-family: 'Lato', sans-serif;
 }
-/* line 68, theme.scss */
-body .container header h1 {
+/* line 95, theme.scss */
+body .container header hgroup {
+  width: 38.196%;
+  float: left;
+}
+/* line 99, theme.scss */
+body .container header hgroup h1 {
   padding-bottom: 0;
 }
-/* line 72, theme.scss */
-body .container header h2 {
+/* line 103, theme.scss */
+body .container header hgroup h2 {
   padding-top: 0;
 }
-/* line 76, theme.scss */
-body .container header a.contact {
+/* line 107, theme.scss */
+body .container header hgroup a.contact {
   border-bottom: 1px dotted;
 }
-
-/* Highlighting active navigation item
-*/
-/* line 101, theme.scss */
-body.flow .container nav li#flow a {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-  border: 1px outset;
+/* line 112, theme.scss */
+body .container header form {
+  width: 61.804%;
+  float: left;
+  margin-top: 6.25em;
+}
+/* line 117, theme.scss */
+body .container header form input[type="submit"] {
+  font-size: large;
+  padding: 0.625em 1.25em;
+  background: #363636;
+  color: #f1f1f1;
 }
 
-/* line 113, theme.scss */
-body.skills .container nav li#skills a {
+/* line 139, theme.scss */
+body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
-  border: 1px outset;
 }
 
-/* line 125, theme.scss */
-body.writing .container nav li#writing a {
+/* line 151, theme.scss */
+body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
-  border: 1px outset;
 }
 
-/* line 137, theme.scss */
-body.design-and-development .container nav li#design-and-development a {
+/* line 163, theme.scss */
+body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
-  border: 1px outset;
+}
+
+/* line 175, theme.scss */
+body.services .container nav li#services a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
 }
 
 /* line 1, common.scss */
