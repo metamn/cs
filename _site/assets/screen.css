@@ -341,35 +341,39 @@ body .container nav ul {
   }
 }
 /* line 35, layout.scss */
-body .container footer aside {
+body .container footer figure {
+  width: 19.098%;
+  float: left;
+  margin-right: 5%;
+}
+/* line 40, layout.scss */
+body .container footer figure img {
   width: 100%;
-  float: left;
+  max-width: 11em;
 }
-@media only screen and (min-width: 1025px) {
-  /* line 35, layout.scss */
-  body .container footer aside {
-    width: 38.196%;
-    float: left;
-  }
-}
-/* line 43, layout.scss */
-body .container footer aside figure {
-  max-width: 10em;
-  margin-right: 1.25em;
-  float: left;
-}
-/* line 50, layout.scss */
+/* line 46, layout.scss */
 body .container footer form {
-  width: 100%;
+  width: 75.902%;
   float: left;
-  margin: 0.625em 0;
 }
-@media only screen and (min-width: 1025px) {
-  /* line 50, layout.scss */
-  body .container footer form {
-    width: 61.804%;
-    margin-left: 38.196%;
+@media only screen and (max-width: 1023px) {
+  /* line 34, layout.scss */
+  body .container footer {
+    margin-bottom: 1.25em;
   }
+  /* line 54, layout.scss */
+  body .container footer figure {
+    width: 38.196%;
+  }
+  /* line 58, layout.scss */
+  body .container footer form {
+    width: 56.804%;
+  }
+}
+
+/* line 69, layout.scss */
+body.contact .container footer form {
+  display: none;
 }
 
 /* The color scheme
@@ -504,23 +508,15 @@ body .container ol input[type="submit"] {
 body .container footer {
   font-family: 'Lato', sans-serif;
 }
-/* line 118, theme.scss */
-body .container footer aside h1 {
+/* line 117, theme.scss */
+body .container footer h1 {
   padding-bottom: 0;
 }
-/* line 122, theme.scss */
-body .container footer aside h2 {
+/* line 121, theme.scss */
+body .container footer h2 {
   padding-top: 0;
 }
 /* line 126, theme.scss */
-body .container footer aside a.contact {
-  border-bottom: 1px dotted;
-}
-/* line 131, theme.scss */
-body .container footer form {
-  margin-top: 2.5em;
-}
-/* line 134, theme.scss */
 body .container footer form input[type="submit"] {
   font-size: large;
   padding: 0.625em 1.25em;
@@ -530,28 +526,28 @@ body .container footer form input[type="submit"] {
 
 /* Highlight menu
 */
-/* line 154, theme.scss */
+/* line 146, theme.scss */
 body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 166, theme.scss */
+/* line 158, theme.scss */
 body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 178, theme.scss */
+/* line 170, theme.scss */
 body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 190, theme.scss */
+/* line 182, theme.scss */
 body.services .container nav li#services a {
   font-weight: bold;
   letter-spacing: 1px;

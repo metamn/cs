@@ -32,30 +32,43 @@ body {
     
     
     footer {
-      aside {
-        @include block;
+      figure {
+        width: $minor/2;
+        float: left;
+        margin-right: $margin;
         
-        @include small-screen-and-up {
-          width: $minor;
-          float: left;
-        }
-        
-        figure {
-          max-width: 10em;
-          margin-right: $pad;
-          float: left;
+        img {
+          width: 100%;
+          max-width: 11em;
         }
       }
       
       form {
-        @include block;
-        margin: $pad/2 0;
+        width: $major + $minor/2 - $margin;
+        float: left;
+      }
+      
+      @include small-screen-and-below {
+        margin-bottom: $pad;
         
-        @include small-screen-and-up {
-          width: $major;
-          margin-left: $minor;
+        figure {
+          width: $minor;
+        }
+        
+        form {
+          width: $major - $margin;
         }
       }
+    }
+  }
+}
+
+body.contact {
+  .container {
+    footer {
+      form {
+        display: none;
+      } 
     }
   }
 }

@@ -114,23 +114,15 @@ body {
     footer {
       font-family: 'Lato', sans-serif;
       
-      aside {
-        h1 {
-          padding-bottom: 0;
-        }
-        
-        h2 {
-          padding-top: 0;
-        }
-        
-        a.contact {
-          border-bottom: 1px dotted;
-        }
+      h1 {
+        padding-bottom: 0;
+      }
+      
+      h2 {
+        padding-top: 0;
       }
       
       form {
-        margin-top: $pad*2;
-        
         input[type="submit"] {
           font-size: large;
           padding: $pad/2 $pad;
