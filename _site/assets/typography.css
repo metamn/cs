@@ -1,12 +1,12 @@
 /*
-Syntax error: Undefined mixin 'large-fonts'.
-        on line 21 of /home/cs/work/cs/assets/typography.scss, in `large-fonts'
-        from line 21 of /home/cs/work/cs/assets/typography.scss
+Syntax error: Undefined variable: "$pad".
+        on line 39 of /home/cs/work/cs/assets/typography.scss
 
 Backtrace:
-/home/cs/work/cs/assets/typography.scss:21:in `large-fonts'
-/home/cs/work/cs/assets/typography.scss:21
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/home/cs/work/cs/assets/typography.scss:39
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/variable.rb:49:in `_perform'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -94,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'large-fonts'.\A         on line 21 of /home/cs/work/cs/assets/typography.scss, in `large-fonts'\A         from line 21 of /home/cs/work/cs/assets/typography.scss"; }
+  content: "Syntax error: Undefined variable: \"$pad\".\A         on line 39 of /home/cs/work/cs/assets/typography.scss"; }

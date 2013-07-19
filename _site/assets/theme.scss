@@ -22,6 +22,27 @@ body {
     }
     
     
+    article {
+      h1, blockquote, footer {
+        @include large-fonts;
+      }
+      
+      h2 {
+        display: none;
+      }
+      
+      table, ul {
+        font-size: 1.5em;
+      }
+      
+      ul {
+        @include list;
+      }
+      
+      figure {
+        margin-bottom: $pad*4;
+      }
+    }
     
     
     nav {
@@ -39,11 +60,10 @@ body {
     }
     
     
-    header {
+    footer {
       font-family: 'Lato', sans-serif;
       
-      hgroup {
-        
+      aside {
         h1 {
           padding-bottom: 0;
         }
@@ -58,8 +78,7 @@ body {
       }
       
       form {
-       
-        margin-top: $pad*5;
+        margin-top: $pad*2;
         
         input[type="submit"] {
           font-size: large;

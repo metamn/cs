@@ -4,13 +4,23 @@ body {
     width: 90%;
     margin: 0 auto;
     
-    section, article, nav, footer {
+    section, nav, footer {
       @include block;
+    }
+    
+    section {
+      @include align-right;
+    }
+    
+    nav {
+      width: $major;
+      padding-left: $minor;
+      float: left;
     }
     
     
     footer {
-      section {
+      aside {
         width: $minor;
         float: left;
         
