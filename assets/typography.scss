@@ -5,10 +5,7 @@ body {
   line-height: 1.25;
   
   .container {
-    h1, h2, h3, h4, h5, h6 {
-	    font-family: 'Lato', sans-serif;
-    }
-
+    
     /* Headings
      -----------------------------------------------
     */
@@ -18,9 +15,10 @@ body {
     */
 
     h1, h2, h3, h4, h5, h6 {
-	    font-size: 1.5em;
-	    padding: 1.25em 0;
-	
+      font-family: 'Lato', sans-serif;
+	    line-height: 1.1;
+	    
+      padding: 1.25em 0;
 	    margin-top: 0; 
 	    margin-bottom: 0;
     }
@@ -30,9 +28,6 @@ body {
     }
    
     
-
-  
-
 
 
     /* Block level elements

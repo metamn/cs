@@ -19,9 +19,6 @@ $pink: #F3AAAA;
 
 
 
-
-
-
 body {
   color: $color;
   background: $background;
@@ -33,13 +30,6 @@ body {
     }
     
     section {
-      width: $major;
-      font-size: larger;
-      
-      font-family: 'Old Standard TT', serif;
-      font-size: 3em;
-      font-weight: 300;
-      
       figcaption {
         font-size: 33%;
       }
@@ -58,7 +48,6 @@ body {
     }
     
     ul {
-      font-size: large;
       padding: $pad 0;
       
       li {

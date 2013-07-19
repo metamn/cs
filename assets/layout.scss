@@ -1,12 +1,21 @@
 
-
 body {
   .container {
     width: 90%;
     margin: 0 auto;
     
-    
     header {
+      display: none;
+    }
+    
+    article {
+      
+      header {
+        display: block;
+      }
+    }
+    
+    footer {
       figure {
         max-width: 10em;
         margin-right: $pad;

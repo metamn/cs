@@ -20,6 +20,10 @@
 }
 
 
+@mixin large-fonts {
+  font-size: 3em;
+  font-weight: 300;
+}
 
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
