@@ -3,9 +3,11 @@
 
 
 $color: #363636;
+
 $background: #f1f1f1;
 $pink: #F3AAAA;
 
+$gray: lighten($color, 50%);
 
 
 
@@ -22,6 +24,12 @@ body {
     }
     
     
+    h1 {
+      @include big-screen {
+        width: 60%;
+      }
+    }
+    
     article {
       h1, blockquote, aside {
         @include large-fonts;
@@ -31,7 +39,7 @@ body {
         blockquote {
           font-size: 1.5em;
           margin: 0;
-          margin-bottom: $pad;
+          margin-bottom: $pad*2;
         }
       }
       
@@ -44,31 +52,46 @@ body {
       }
       
       table {
-        @include small-screen-and-below {
-          font-size: small;
-        }
-        
-        @include small-screen {
-          font-size: smaller;
-        }
-        
-        @include tablet {
-          td, th, tr {
-            padding: $pad/2;
+        td, th, tr {
+          padding: $pad/2;
+          
+          @include small-screen-and-below {
+            padding: $pad/4;
+          }
+          
+          @include tablet-and-below {
+            padding: $pad/6;
+            font-size: smaller;
+          }
+          
+          @include mobile {
+            padding: $pad/8;
+            font-size: small;
           }
         }
         
-        @include mobile {
-          td, th, tr {
-            padding: $pad/8;
+        td {
+          border-bottom: 1px dotted $color;
+          color: $pink;
+          
+          &.c1 {
+            color: $color;
           }
         }
       }
       
-      
-      
       ul {
         @include list;
+        list-style: none;
+        margin: $pad 0;
+        
+        li {
+          &:before {
+            content: '\2714';
+            color: $pink;
+            margin-right: $pad/2;
+          }
+        }
       }
       
       figure {
@@ -76,6 +99,7 @@ body {
         
         figcaption {
           padding: $pad/2 0;
+          color: $gray;
         }
       }
     }
@@ -83,7 +107,6 @@ body {
     
     nav {
       background: url(/assets/background.png) $pink;
-      margin: $pad*3 0;
       
       ul {
         @include list;
@@ -91,6 +114,8 @@ body {
     }
     
     
+    /* Contact page
+    */
     ol {
       margin: 0;
       
@@ -129,6 +154,12 @@ body {
           
           background: $color;
           color: $background;
+        }
+      }
+      
+      #contact {
+        a {
+          border-bottom: 1px dotted;
         }
       }
     }

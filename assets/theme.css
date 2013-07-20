@@ -1,22 +1,12 @@
 /*
-Syntax error: Undefined mixin 'large-fonts'.
-        on line 27 of /home/cs/work/cs/assets/theme.scss, in `large-fonts'
-        from line 27 of /home/cs/work/cs/assets/theme.scss
+Syntax error: Undefined mixin 'big-screen'.
+        on line 28 of /home/cs/work/cs/assets/theme.scss, in `big-screen'
+        from line 28 of /home/cs/work/cs/assets/theme.scss
 
 Backtrace:
-/home/cs/work/cs/assets/theme.scss:27:in `large-fonts'
-/home/cs/work/cs/assets/theme.scss:27
+/home/cs/work/cs/assets/theme.scss:28:in `big-screen'
+/home/cs/work/cs/assets/theme.scss:28
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -104,4 +94,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'large-fonts'.\A         on line 27 of /home/cs/work/cs/assets/theme.scss, in `large-fonts'\A         from line 27 of /home/cs/work/cs/assets/theme.scss"; }
+  content: "Syntax error: Undefined mixin 'big-screen'.\A         on line 28 of /home/cs/work/cs/assets/theme.scss, in `big-screen'\A         from line 28 of /home/cs/work/cs/assets/theme.scss"; }

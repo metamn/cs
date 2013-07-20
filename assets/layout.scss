@@ -9,24 +9,25 @@ body {
     }
     
     section {
-      @include small-screen-and-up {
-        @include align-right;
-      }
+      @include align-right;
     }
     
+    
     nav {
+      margin: $pad*2 0;
+      
       ul {
-        padding-left: $pad !important;
+        @include align-right;
+        
+        li {
+          @include tablet-and-below {
+            margin-left: $pad*2;
+          }
+        }
       }
       
-      @include small-screen-and-up {
-        width: $major;
-        padding-left: $minor;
-        float: left;
-        
-        ul {
-          padding-left: 0;
-        }
+      @include big-screen {
+        margin: $pad*3 0;
       }
     }
     
@@ -34,8 +35,9 @@ body {
     footer {
       figure {
         width: $minor/2;
-        float: left;
         margin-right: $margin;
+        
+        float: left;
         
         img {
           width: 100%;
@@ -46,6 +48,10 @@ body {
       form {
         width: $major + $minor/2 - $margin;
         float: left;
+      }
+      
+      #contact {
+        display: none;
       }
       
       @include small-screen-and-below {
@@ -63,12 +69,18 @@ body {
   }
 }
 
+
+
 body.contact {
   .container {
     footer {
       form {
         display: none;
       } 
+      
+      #contact {
+        display: block;
+      }
     }
   }
 }
