@@ -1,0 +1,618 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Vertical rhythm
+*/
+/* The Grid
+*/
+/* Responsive mixins
+  - http://paulstamatiou.com/responsive-retina-blog-development-part-1
+*/
+/* Highlighting active navigation item
+*/
+/* line 1, typography.scss */
+body {
+  font-family: 'Old Standard TT', serif;
+  font-size: 100%;
+  line-height: 1.25;
+}
+/* line 7, typography.scss */
+body .container {
+  /* Headings
+   -----------------------------------------------
+  */
+  /* Headings dont differ by size but by decoration
+   - vertical rhythm is maintained by padding
+  */
+  /* Block level elements
+  // -----------------------------------------------
+  */
+  /* the second <p> has a top margin */
+  /* blockquote is simply indented, enlarged */
+  /* address is small caps */
+  /* Lists
+  // -----------------------------------------------
+  */
+  /* Tables
+  // -----------------------------------------------
+  */
+  /* Text styles
+  // -----------------------------------------------
+  */
+  /* Forms
+  // -----------------------------------------------
+  */
+  /* Reset browser defaults */
+  /* Text */
+  /* Button */
+  /* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
+    - the checkbox and radio button is not displayed
+    - instead a label is displayed which can be styled with 'content' 
+  */
+  /* Select box 
+    - put inside a <label class="select">
+    - label:after is positioned over the original selectbox arrow
+    - additionally padding & relative positioning must be overwritten later in the new context
+  */
+}
+/* line 17, typography.scss */
+body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.1;
+  font-size: 1.5em;
+  padding: 1.25em 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 27, typography.scss */
+body .container h2 {
+  font-weight: 300;
+}
+/* line 38, typography.scss */
+body .container p + p {
+  margin-top: 1.25em;
+}
+/* line 43, typography.scss */
+body .container q, body .container blockquote {
+  display: block;
+  margin: 2.5em;
+  border-left: 1px dotted;
+  padding-left: 1.25em;
+  font-style: italic;
+  font-size: larger;
+}
+/* line 55, typography.scss */
+body .container address {
+  font-variant: small-caps;
+}
+/* line 64, typography.scss */
+body .container ul, body .container menu, body .container dir, body .container ol {
+  margin: 1.25em;
+  list-style-type: square;
+}
+/* line 69, typography.scss */
+body .container ol {
+  list-style-type: decimal;
+}
+/* line 73, typography.scss */
+body .container dl {
+  margin: 1.25em 0;
+}
+/* line 76, typography.scss */
+body .container dl dt {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1.25em 0;
+}
+/* line 81, typography.scss */
+body .container dl dd {
+  margin: 0.3125em;
+  margin-bottom: 0.625em;
+}
+/* line 86, typography.scss */
+body .container dl dd + dt {
+  margin-top: 2.5em;
+}
+/* line 98, typography.scss */
+body .container table {
+  margin: 1.25em 0 2.5em;
+}
+/* line 103, typography.scss */
+body .container table thead tr td {
+  font-weight: bold;
+}
+/* line 109, typography.scss */
+body .container table tbody {
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+}
+/* line 114, typography.scss */
+body .container table td, body .container table th, body .container table tr {
+  text-align: left;
+  vertical-align: top;
+  padding: 1.25em;
+}
+/* line 120, typography.scss */
+body .container table td {
+  border-bottom: 1px solid;
+}
+/* line 131, typography.scss */
+body .container em, body .container i {
+  font-style: italic;
+}
+/* line 135, typography.scss */
+body .container strong, body .container b {
+  font-weight: bold;
+}
+/* line 148, typography.scss */
+body .container input, body .container textarea, body .container select {
+  border: none;
+  outline: 0;
+  background: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 159, typography.scss */
+body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
+  font-style: italic;
+  color: gray;
+}
+/* line 165, typography.scss */
+body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
+  color: black;
+  font-style: normal;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid;
+}
+/* line 173, typography.scss */
+body .container input[type='submit'] {
+  background: black;
+  color: lightgray;
+  padding: 0.625em;
+}
+/* line 178, typography.scss */
+body .container input[type='submit']:hover {
+  cursor: pointer;
+  color: white;
+}
+/* line 192, typography.scss */
+body .container input[type='radio'], body .container input[type='checkbox'] {
+  display: none;
+}
+/* line 195, typography.scss */
+body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
+  display: inline-block;
+}
+/* line 200, typography.scss */
+body .container input[type='radio'] + label:after {
+  content: '\2610';
+  margin-right: 0.625em;
+}
+/* line 204, typography.scss */
+body .container input[type='radio']:checked + label:after {
+  content: '\25a3';
+}
+/* line 209, typography.scss */
+body .container input[type='checkbox'] + label:before {
+  content: '\2610';
+  margin-right: 0.3125em;
+  font-size: 200%;
+  line-height: .5;
+  vertical-align: top;
+  color: lightgray;
+}
+/* line 220, typography.scss */
+body .container input[type='checkbox']:checked + label:before {
+  content: '\2611';
+  color: black;
+}
+/* line 233, typography.scss */
+body .container select {
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  width: 100%;
+}
+/* line 238, typography.scss */
+body .container label.select:after {
+  content: '\003E';
+  float: right;
+  display: inline-block;
+  padding: 0 .45em;
+  position: relative;
+  left: 0;
+  background: white;
+  pointer-events: none;
+  /* this is a must */
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+/* line 3, layout.scss */
+body .container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 7, layout.scss */
+body .container section, body .container nav, body .container footer {
+  width: 100%;
+  float: left;
+}
+/* line 11, layout.scss */
+body .container section {
+  width: 75.902%;
+  margin-left: 24.098%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 11, layout.scss */
+  body .container section {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+}
+/* line 16, layout.scss */
+body .container nav {
+  margin: 2.5em 0;
+}
+/* line 19, layout.scss */
+body .container nav ul {
+  width: 75.902%;
+  margin-left: 24.098%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 19, layout.scss */
+  body .container nav ul {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 22, layout.scss */
+  body .container nav ul li {
+    margin-left: 2.5em;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  /* line 16, layout.scss */
+  body .container nav {
+    margin: 3.75em 0;
+  }
+}
+/* line 36, layout.scss */
+body .container footer figure {
+  width: 19.098%;
+  margin-right: 5%;
+  float: left;
+}
+/* line 42, layout.scss */
+body .container footer figure img {
+  width: 100%;
+  max-width: 11em;
+}
+/* line 48, layout.scss */
+body .container footer form {
+  width: 75.902%;
+  float: left;
+}
+/* line 53, layout.scss */
+body .container footer #contact {
+  display: none;
+}
+@media only screen and (max-width: 1023px) {
+  /* line 35, layout.scss */
+  body .container footer {
+    margin-bottom: 1.25em;
+  }
+  /* line 60, layout.scss */
+  body .container footer figure {
+    width: 38.196%;
+  }
+  /* line 64, layout.scss */
+  body .container footer form {
+    width: 56.804%;
+  }
+}
+
+/* line 77, layout.scss */
+body.contact .container footer form {
+  display: none;
+}
+/* line 81, layout.scss */
+body.contact .container footer #contact {
+  display: block;
+}
+
+/* The color scheme
+*/
+/* line 16, theme.scss */
+body {
+  color: #363636;
+  background: #f1f1f1;
+}
+/* line 20, theme.scss */
+body .container {
+  /* Contact page
+  */
+}
+/* line 21, theme.scss */
+body .container a, body .container a:active, body .container a:visited {
+  color: #363636;
+  text-decoration: none;
+}
+@media only screen and (min-width: 1401px) {
+  /* line 27, theme.scss */
+  body .container h1 {
+    width: 60%;
+  }
+}
+/* line 34, theme.scss */
+body .container article h1, body .container article blockquote, body .container article aside {
+  font-size: 3em;
+  font-weight: 300;
+}
+@media only screen and (max-width: 1023px) {
+  /* line 39, theme.scss */
+  body .container article blockquote {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 2.5em;
+  }
+}
+/* line 46, theme.scss */
+body .container article h2 {
+  display: none;
+}
+/* line 50, theme.scss */
+body .container article table, body .container article ul, body .container article ol, body .container article aside {
+  font-size: 1.5em;
+}
+/* line 55, theme.scss */
+body .container article table td, body .container article table th, body .container article table tr {
+  padding: 0.625em;
+}
+@media only screen and (max-width: 1023px) {
+  /* line 55, theme.scss */
+  body .container article table td, body .container article table th, body .container article table tr {
+    padding: 0.3125em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 55, theme.scss */
+  body .container article table td, body .container article table th, body .container article table tr {
+    padding: 0.20833em;
+    font-size: smaller;
+  }
+}
+@media (max-width: 380px) {
+  /* line 55, theme.scss */
+  body .container article table td, body .container article table th, body .container article table tr {
+    padding: 0.15625em;
+    font-size: small;
+  }
+}
+/* line 73, theme.scss */
+body .container article table td {
+  border-bottom: 1px dotted #363636;
+  color: #f3aaaa;
+}
+/* line 77, theme.scss */
+body .container article table td.c1 {
+  color: #363636;
+}
+/* line 83, theme.scss */
+body .container article ul {
+  padding: 1.25em 0;
+  list-style: none;
+  margin: 1.25em 0;
+}
+/* line 115, mixins.scss */
+body .container article ul li {
+  padding: 0.625em 0;
+  border-bottom: 1px dotted;
+}
+/* line 120, mixins.scss */
+body .container article ul li a:hover {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+/* line 125, mixins.scss */
+body .container article ul li.last {
+  border-bottom: none;
+}
+/* line 89, theme.scss */
+body .container article ul li:before {
+  content: '\2714';
+  color: #f3aaaa;
+  margin-right: 0.625em;
+}
+/* line 97, theme.scss */
+body .container article figure {
+  margin-bottom: 5em;
+}
+/* line 100, theme.scss */
+body .container article figure figcaption {
+  padding: 0.625em 0;
+  color: #b5b5b5;
+}
+/* line 108, theme.scss */
+body .container nav {
+  background: url(/assets/background.png) #f3aaaa;
+}
+/* line 111, theme.scss */
+body .container nav ul {
+  padding: 1.25em 0;
+}
+/* line 115, mixins.scss */
+body .container nav ul li {
+  padding: 0.625em 0;
+  border-bottom: 1px dotted;
+}
+/* line 120, mixins.scss */
+body .container nav ul li a:hover {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+/* line 125, mixins.scss */
+body .container nav ul li.last {
+  border-bottom: none;
+}
+/* line 119, theme.scss */
+body .container ol {
+  margin: 0;
+}
+/* line 122, theme.scss */
+body .container ol input, body .container ol textarea {
+  width: 38.196%;
+  margin-bottom: 1.25em;
+  padding: 0.625em;
+}
+@media only screen and (max-width: 1023px) {
+  /* line 122, theme.scss */
+  body .container ol input, body .container ol textarea {
+    width: 94%;
+  }
+}
+/* line 133, theme.scss */
+body .container ol input[type="submit"] {
+  width: 10em;
+}
+/* line 139, theme.scss */
+body .container footer {
+  font-family: 'Lato', sans-serif;
+}
+/* line 142, theme.scss */
+body .container footer h1 {
+  padding-bottom: 0;
+}
+/* line 146, theme.scss */
+body .container footer h2 {
+  padding-top: 0;
+}
+/* line 151, theme.scss */
+body .container footer form input[type="submit"] {
+  font-size: large;
+  padding: 0.625em 1.25em;
+  background: #363636;
+  color: #f1f1f1;
+}
+/* line 161, theme.scss */
+body .container footer #contact a {
+  border-bottom: 1px dotted;
+}
+
+/* Highlight menu
+*/
+/* line 177, theme.scss */
+body.identity .container nav li#identity a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+
+/* line 189, theme.scss */
+body.design .container nav li#design a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+
+/* line 201, theme.scss */
+body.development .container nav li#development a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+
+/* line 213, theme.scss */
+body.services .container nav li#services a {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.625em;
+}
+
+/* line 1, common.scss */
+.outline {
+  display: none;
+}
+
+/* line 5, common.scss */
+img {
+  max-width: 100%;
+}

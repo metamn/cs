@@ -1,0 +1,92 @@
+
+body {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    
+    section, nav, footer {
+      @include block;
+    }
+    
+    section {
+      @include align-right;
+    }
+    
+    
+    nav {
+      margin: $pad*2 0;
+      
+      ul {
+        @include align-right;
+        
+        li {
+          @include tablet-and-below {
+            margin-left: $pad*2;
+          }
+        }
+      }
+      
+      @include big-screen {
+        margin: $pad*3 0;
+      }
+    }
+    
+    
+    footer {
+      figure {
+        width: $minor/2;
+        margin-right: $margin;
+        
+        float: left;
+        
+        img {
+          width: 100%;
+          max-width: 11em;
+        }
+      }
+      
+      form {
+        width: $major + $minor/2 - $margin;
+        float: left;
+      }
+      
+      #contact {
+        display: none;
+      }
+      
+      @include small-screen-and-below {
+        margin-bottom: $pad;
+        
+        figure {
+          width: $minor;
+        }
+        
+        form {
+          width: $major - $margin;
+        }
+      }
+    }
+  }
+}
+
+
+
+body.contact {
+  .container {
+    footer {
+      form {
+        display: none;
+      } 
+      
+      #contact {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
+

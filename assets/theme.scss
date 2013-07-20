@@ -1,0 +1,226 @@
+/* The color scheme
+*/
+
+
+$color: #363636;
+
+$background: #f1f1f1;
+$pink: #F3AAAA;
+
+$gray: lighten($color, 50%);
+
+
+
+
+
+body {
+  color: $color;
+  background: $background;
+  
+  .container {
+    a, a:active, a:visited {
+      color: $color;
+      text-decoration: none;
+    }
+    
+    
+    h1 {
+      @include big-screen {
+        width: 60%;
+      }
+    }
+    
+    article {
+      h1, blockquote, aside {
+        @include large-fonts;
+      }
+      
+      @include small-screen-and-below {
+        blockquote {
+          font-size: 1.5em;
+          margin: 0;
+          margin-bottom: $pad*2;
+        }
+      }
+      
+      h2 {
+        display: none;
+      }
+      
+      table, ul, ol, aside {
+        font-size: 1.5em;
+      }
+      
+      table {
+        td, th, tr {
+          padding: $pad/2;
+          
+          @include small-screen-and-below {
+            padding: $pad/4;
+          }
+          
+          @include tablet-and-below {
+            padding: $pad/6;
+            font-size: smaller;
+          }
+          
+          @include mobile {
+            padding: $pad/8;
+            font-size: small;
+          }
+        }
+        
+        td {
+          border-bottom: 1px dotted $color;
+          color: $pink;
+          
+          &.c1 {
+            color: $color;
+          }
+        }
+      }
+      
+      ul {
+        @include list;
+        list-style: none;
+        margin: $pad 0;
+        
+        li {
+          &:before {
+            content: '\2714';
+            color: $pink;
+            margin-right: $pad/2;
+          }
+        }
+      }
+      
+      figure {
+        margin-bottom: $pad*4;
+        
+        figcaption {
+          padding: $pad/2 0;
+          color: $gray;
+        }
+      }
+    }
+    
+    
+    nav {
+      background: url(/assets/background.png) $pink;
+      
+      ul {
+        @include list;
+      }
+    }
+    
+    
+    /* Contact page
+    */
+    ol {
+      margin: 0;
+      
+      input, textarea {
+        width: $minor;
+        
+        @include small-screen-and-below {
+          width: 94%;
+        }
+          
+        margin-bottom: $pad;
+        padding: $pad/2;
+      }
+      
+      input[type="submit"] {
+        width: 10em;
+      }
+    }
+    
+    
+    footer {
+      font-family: 'Lato', sans-serif;
+      
+      h1 {
+        padding-bottom: 0;
+      }
+      
+      h2 {
+        padding-top: 0;
+      }
+      
+      form {
+        input[type="submit"] {
+          font-size: large;
+          padding: $pad/2 $pad;
+          
+          background: $color;
+          color: $background;
+        }
+      }
+      
+      #contact {
+        a {
+          border-bottom: 1px dotted;
+        }
+      }
+    }
+  }
+}
+
+
+
+/* Highlight menu
+*/
+body.identity {
+  .container {
+    nav {
+      li#identity {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.design {
+  .container {
+    nav {
+      li#design {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.development {
+  .container {
+    nav {
+      li#development {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.services {
+  .container {
+    nav {
+      li#services {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
