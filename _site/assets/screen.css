@@ -512,7 +512,7 @@ body .container article figure figcaption {
 }
 /* line 109, theme.scss */
 body .container nav {
-  background: url(/assets/background.png) #f3aaaa;
+  background: url('/assets/background.png?1374217406') #f3aaaa;
 }
 /* line 113, theme.scss */
 body .container nav ul {
