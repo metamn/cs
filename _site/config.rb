@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "http://metamn.github.io/cs/"
 css_dir = "assets"
 sass_dir = "assets"
 images_dir = "assets"
@@ -13,7 +13,7 @@ fonts_dir = "assets"
 output_style = :compact
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
