@@ -535,7 +535,7 @@ body .container nav ul li.last {
 }
 /* line 121, theme.scss */
 body .container ol {
-  margin: 0;
+  margin: 0 0;
 }
 /* line 124, theme.scss */
 body .container ol input, body .container ol textarea {
