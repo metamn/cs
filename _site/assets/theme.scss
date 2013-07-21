@@ -1,3 +1,4 @@
+
 /* The color scheme
 */
 
@@ -107,6 +108,7 @@ body {
     
     nav {
       background: url(/assets/background.png) $pink;
+      
       
       ul {
         @include list;
