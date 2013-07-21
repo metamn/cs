@@ -1,5 +1,27 @@
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
+@media only screen and (max-width: 380px) {
+  /* line 67, mixins.scss */
+  .mobile {
+    display: block;
+  }
+
+  /* line 68, mixins.scss */
+  .desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 381px) {
+  /* line 72, mixins.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 73, mixins.scss */
+  .desktop {
+    display: block;
+  }
+}
 /* Highlighting active navigation item
 */

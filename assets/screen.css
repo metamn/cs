@@ -74,6 +74,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Responsive mixins
   - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
+@media only screen and (max-width: 380px) {
+  /* line 67, mixins.scss */
+  .mobile {
+    display: block;
+  }
+
+  /* line 68, mixins.scss */
+  .desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 381px) {
+  /* line 72, mixins.scss */
+  .mobile {
+    display: none;
+  }
+
+  /* line 73, mixins.scss */
+  .desktop {
+    display: block;
+  }
+}
 /* Highlighting active navigation item
 */
 /* line 1, typography.scss */
@@ -124,21 +146,20 @@ body .container {
 /* line 17, typography.scss */
 body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
   font-family: 'Lato', sans-serif;
-  line-height: 1.1;
   font-size: 1.5em;
   padding: 1.25em 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 27, typography.scss */
+/* line 26, typography.scss */
 body .container h2 {
   font-weight: 300;
 }
-/* line 38, typography.scss */
+/* line 37, typography.scss */
 body .container p + p {
   margin-top: 1.25em;
 }
-/* line 43, typography.scss */
+/* line 42, typography.scss */
 body .container q, body .container blockquote {
   display: block;
   margin: 2.5em;
@@ -147,70 +168,70 @@ body .container q, body .container blockquote {
   font-style: italic;
   font-size: larger;
 }
-/* line 55, typography.scss */
+/* line 54, typography.scss */
 body .container address {
   font-variant: small-caps;
 }
-/* line 64, typography.scss */
+/* line 63, typography.scss */
 body .container ul, body .container menu, body .container dir, body .container ol {
   margin: 1.25em;
   list-style-type: square;
 }
-/* line 69, typography.scss */
+/* line 68, typography.scss */
 body .container ol {
   list-style-type: decimal;
 }
-/* line 73, typography.scss */
+/* line 72, typography.scss */
 body .container dl {
   margin: 1.25em 0;
 }
-/* line 76, typography.scss */
+/* line 75, typography.scss */
 body .container dl dt {
   font-weight: bold;
   text-transform: uppercase;
   margin: 1.25em 0;
 }
-/* line 81, typography.scss */
+/* line 80, typography.scss */
 body .container dl dd {
   margin: 0.3125em;
   margin-bottom: 0.625em;
 }
-/* line 86, typography.scss */
+/* line 85, typography.scss */
 body .container dl dd + dt {
   margin-top: 2.5em;
 }
-/* line 98, typography.scss */
+/* line 97, typography.scss */
 body .container table {
   margin: 1.25em 0 2.5em;
 }
-/* line 103, typography.scss */
+/* line 102, typography.scss */
 body .container table thead tr td {
   font-weight: bold;
 }
-/* line 109, typography.scss */
+/* line 108, typography.scss */
 body .container table tbody {
   border-top: 1px dotted;
   border-bottom: 1px dotted;
 }
-/* line 114, typography.scss */
+/* line 113, typography.scss */
 body .container table td, body .container table th, body .container table tr {
   text-align: left;
   vertical-align: top;
   padding: 1.25em;
 }
-/* line 120, typography.scss */
+/* line 119, typography.scss */
 body .container table td {
   border-bottom: 1px solid;
 }
-/* line 131, typography.scss */
+/* line 130, typography.scss */
 body .container em, body .container i {
   font-style: italic;
 }
-/* line 135, typography.scss */
+/* line 134, typography.scss */
 body .container strong, body .container b {
   font-weight: bold;
 }
-/* line 148, typography.scss */
+/* line 147, typography.scss */
 body .container input, body .container textarea, body .container select {
   border: none;
   outline: 0;
@@ -219,49 +240,49 @@ body .container input, body .container textarea, body .container select {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-/* line 159, typography.scss */
+/* line 158, typography.scss */
 body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
   border: 1px solid transparent;
   border-bottom: 1px solid;
   font-style: italic;
   color: gray;
 }
-/* line 165, typography.scss */
+/* line 164, typography.scss */
 body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
   color: black;
   font-style: normal;
   border: 1px solid #ccc;
   border-bottom: 1px solid;
 }
-/* line 173, typography.scss */
+/* line 172, typography.scss */
 body .container input[type='submit'] {
   background: black;
   color: lightgray;
   padding: 0.625em;
 }
-/* line 178, typography.scss */
+/* line 177, typography.scss */
 body .container input[type='submit']:hover {
   cursor: pointer;
   color: white;
 }
-/* line 192, typography.scss */
+/* line 191, typography.scss */
 body .container input[type='radio'], body .container input[type='checkbox'] {
   display: none;
 }
-/* line 195, typography.scss */
+/* line 194, typography.scss */
 body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
   display: inline-block;
 }
-/* line 200, typography.scss */
+/* line 199, typography.scss */
 body .container input[type='radio'] + label:after {
   content: '\2610';
   margin-right: 0.625em;
 }
-/* line 204, typography.scss */
+/* line 203, typography.scss */
 body .container input[type='radio']:checked + label:after {
   content: '\25a3';
 }
-/* line 209, typography.scss */
+/* line 208, typography.scss */
 body .container input[type='checkbox'] + label:before {
   content: '\2610';
   margin-right: 0.3125em;
@@ -270,18 +291,18 @@ body .container input[type='checkbox'] + label:before {
   vertical-align: top;
   color: lightgray;
 }
-/* line 220, typography.scss */
+/* line 219, typography.scss */
 body .container input[type='checkbox']:checked + label:before {
   content: '\2611';
   color: black;
 }
-/* line 233, typography.scss */
+/* line 232, typography.scss */
 body .container select {
   border-bottom: 1px solid gray;
   cursor: pointer;
   width: 100%;
 }
-/* line 238, typography.scss */
+/* line 237, typography.scss */
 body .container label.select:after {
   content: '\003E';
   float: right;
@@ -328,13 +349,19 @@ body .container section {
 body .container nav {
   margin: 2.5em 0;
 }
-/* line 19, layout.scss */
+@media only screen and (min-width: 1025px) {
+  /* line 16, layout.scss */
+  body .container nav {
+    margin: 6.25em 0;
+  }
+}
+/* line 23, layout.scss */
 body .container nav ul {
   width: 75.902%;
   margin-left: 24.098%;
 }
 @media only screen and (max-width: 767px) {
-  /* line 19, layout.scss */
+  /* line 23, layout.scss */
   body .container nav ul {
     width: 100%;
     float: left;
@@ -342,15 +369,9 @@ body .container nav ul {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 22, layout.scss */
+  /* line 26, layout.scss */
   body .container nav ul li {
     margin-left: 2.5em;
-  }
-}
-@media only screen and (min-width: 1401px) {
-  /* line 16, layout.scss */
-  body .container nav {
-    margin: 3.75em 0;
   }
 }
 /* line 36, layout.scss */
@@ -414,7 +435,7 @@ body .container a, body .container a:active, body .container a:visited {
   color: #363636;
   text-decoration: none;
 }
-@media only screen and (min-width: 1401px) {
+@media only screen and (min-width: 1025px) {
   /* line 28, theme.scss */
   body .container h1 {
     width: 60%;
@@ -441,166 +462,192 @@ body .container article h2 {
 body .container article table, body .container article ul, body .container article ol, body .container article aside {
   font-size: 1.5em;
 }
-/* line 56, theme.scss */
+/* line 55, theme.scss */
+body .container article table, body .container article ul, body .container article ol, body .container article dl, body .container article dt, body .container article td, body .container article th {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+/* line 61, theme.scss */
 body .container article table td, body .container article table th, body .container article table tr {
   padding: 0.625em;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 56, theme.scss */
+  /* line 61, theme.scss */
   body .container article table td, body .container article table th, body .container article table tr {
     padding: 0.3125em;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 56, theme.scss */
+  /* line 61, theme.scss */
   body .container article table td, body .container article table th, body .container article table tr {
-    padding: 0.20833em;
     font-size: smaller;
   }
 }
-@media (max-width: 380px) {
-  /* line 56, theme.scss */
-  body .container article table td, body .container article table th, body .container article table tr {
-    padding: 0.15625em;
-    font-size: small;
-  }
-}
-/* line 74, theme.scss */
+/* line 73, theme.scss */
 body .container article table td {
   border-bottom: 1px dotted #363636;
   color: #f3aaaa;
 }
-/* line 78, theme.scss */
+/* line 77, theme.scss */
 body .container article table td.c1 {
   color: #363636;
 }
 /* line 84, theme.scss */
+body .container article dl dt {
+  border-bottom: 1px dotted #f3aaaa;
+  margin-bottom: 0.625em;
+}
+/* line 89, theme.scss */
+body .container article dl dd {
+  margin: 0;
+}
+/* line 94, theme.scss */
 body .container article ul {
   padding: 1.25em 0;
   list-style: none;
   margin: 1.25em 0;
 }
-/* line 115, mixins.scss */
+/* line 125, mixins.scss */
 body .container article ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 120, mixins.scss */
+/* line 130, mixins.scss */
 body .container article ul li a:hover {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
-/* line 125, mixins.scss */
+/* line 135, mixins.scss */
 body .container article ul li.last {
   border-bottom: none;
 }
-/* line 90, theme.scss */
+/* line 99, theme.scss */
+body .container article ul li {
+  border-bottom: 1px inset #f3aaaa;
+}
+/* line 102, theme.scss */
 body .container article ul li:before {
   content: '\2714';
   color: #f3aaaa;
   margin-right: 0.625em;
 }
-/* line 98, theme.scss */
+@media only screen and (max-width: 767px) {
+  /* line 94, theme.scss */
+  body .container article ul {
+    font-size: 1.25em;
+  }
+}
+/* line 115, theme.scss */
 body .container article figure {
   margin-bottom: 5em;
 }
-/* line 101, theme.scss */
+/* line 118, theme.scss */
 body .container article figure figcaption {
   padding: 0.625em 0;
   color: #b5b5b5;
 }
-/* line 109, theme.scss */
+/* line 126, theme.scss */
 body .container nav {
-  background: url('/assets/background.png?1374217406') #f3aaaa;
+  background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa;
 }
-/* line 113, theme.scss */
+/* line 128, theme.scss */
 body .container nav ul {
   padding: 1.25em 0;
 }
-/* line 115, mixins.scss */
+/* line 125, mixins.scss */
 body .container nav ul li {
   padding: 0.625em 0;
   border-bottom: 1px dotted;
 }
-/* line 120, mixins.scss */
+/* line 130, mixins.scss */
 body .container nav ul li a:hover {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
-/* line 125, mixins.scss */
+/* line 135, mixins.scss */
 body .container nav ul li.last {
   border-bottom: none;
 }
-/* line 121, theme.scss */
+/* line 136, theme.scss */
 body .container ol {
-  margin: 0 0;
+  margin: 0;
 }
-/* line 124, theme.scss */
+/* line 139, theme.scss */
 body .container ol input, body .container ol textarea {
   width: 38.196%;
   margin-bottom: 1.25em;
   padding: 0.625em;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 124, theme.scss */
+  /* line 139, theme.scss */
   body .container ol input, body .container ol textarea {
     width: 94%;
   }
 }
-/* line 135, theme.scss */
+/* line 150, theme.scss */
 body .container ol input[type="submit"] {
   width: 10em;
 }
-/* line 141, theme.scss */
+/* line 156, theme.scss */
 body .container footer {
   font-family: 'Lato', sans-serif;
 }
-/* line 144, theme.scss */
+/* line 159, theme.scss */
 body .container footer h1 {
   padding-bottom: 0;
 }
-/* line 148, theme.scss */
+/* line 162, theme.scss */
 body .container footer h2 {
   padding-top: 0;
 }
-/* line 153, theme.scss */
+@media (max-width: 380px) {
+  /* line 167, theme.scss */
+  body .container footer h1 {
+    padding-top: 0;
+  }
+  /* line 171, theme.scss */
+  body .container footer h2 {
+    padding-top: 3.75em;
+  }
+}
+/* line 179, theme.scss */
 body .container footer form input[type="submit"] {
   font-size: large;
   padding: 0.625em 1.25em;
   background: #363636;
   color: #f1f1f1;
 }
-/* line 163, theme.scss */
+/* line 189, theme.scss */
 body .container footer #contact a {
   border-bottom: 1px dotted;
 }
 
 /* Highlight menu
 */
-/* line 179, theme.scss */
+/* line 205, theme.scss */
 body.identity .container nav li#identity a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 191, theme.scss */
+/* line 217, theme.scss */
 body.design .container nav li#design a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 203, theme.scss */
+/* line 229, theme.scss */
 body.development .container nav li#development a {
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.625em;
 }
 
-/* line 215, theme.scss */
+/* line 241, theme.scss */
 body.services .container nav li#services a {
   font-weight: bold;
   letter-spacing: 1px;

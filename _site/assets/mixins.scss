@@ -63,6 +63,16 @@ $breakpoint-big: 1400px !default;
 	}
 }
 
+@media only screen and (max-width : $breakpoint-mobile) {
+  .mobile { display: block; }
+  .desktop { display: none !important; }
+}
+
+@media only screen and (min-width : $breakpoint-mobile + 1) {
+  .mobile { display: none; }
+  .desktop { display: block; }
+}
+
 
 
 

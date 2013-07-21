@@ -1,7 +1,7 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "http://metamn.github.io/cs/"
+http_path = "/"
 css_dir = "assets"
 sass_dir = "assets"
 images_dir = "assets"

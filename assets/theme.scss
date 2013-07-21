@@ -26,7 +26,7 @@ body {
     
     
     h1 {
-      @include big-screen {
+      @include small-screen-and-up {
         width: 60%;
       }
     }
@@ -52,6 +52,11 @@ body {
         font-size: 1.5em;
       }
       
+      table, ul, ol, dl, dt, td, th {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+      }
+      
       table {
         td, th, tr {
           padding: $pad/2;
@@ -61,13 +66,7 @@ body {
           }
           
           @include tablet-and-below {
-            padding: $pad/6;
             font-size: smaller;
-          }
-          
-          @include mobile {
-            padding: $pad/8;
-            font-size: small;
           }
         }
         
@@ -81,17 +80,35 @@ body {
         }
       }
       
+      dl {
+        dt {
+          border-bottom: 1px dotted $pink;
+          margin-bottom: $pad/2;
+        }
+        
+        dd {
+          margin: 0;
+        }
+      }
+      
       ul {
         @include list;
         list-style: none;
         margin: $pad 0;
         
         li {
+          border-bottom: 1px inset $pink;
+          
           &:before {
             content: '\2714';
             color: $pink;
             margin-right: $pad/2;
           }
+        }
+        
+        
+        @include tablet-and-below {
+          font-size: $pad;
         }
       }
       
@@ -107,9 +124,7 @@ body {
     
     
     nav {
-      background: image-url("background.png") $pink;
-      
-      
+      background: url(http://metamn.github.io/cs/assets/background.png) $pink;
       ul {
         @include list;
       }
@@ -119,7 +134,7 @@ body {
     /* Contact page
     */
     ol {
-      margin: 0 0;
+      margin: 0;
       
       input, textarea {
         width: $minor;
@@ -144,10 +159,21 @@ body {
       h1 {
         padding-bottom: 0;
       }
-      
       h2 {
         padding-top: 0;
       }
+      
+      @include mobile {
+        h1 {
+          padding-top: 0;
+        }
+        
+        h2 {
+          padding-top: $pad*3;
+        }
+      }
+      
+      
       
       form {
         input[type="submit"] {

@@ -16,6 +16,10 @@ body {
     nav {
       margin: $pad*2 0;
       
+      @include small-screen-and-up {
+        margin: $pad*5 0;
+      }
+      
       ul {
         @include align-right;
         
@@ -24,10 +28,6 @@ body {
             margin-left: $pad*2;
           }
         }
-      }
-      
-      @include big-screen {
-        margin: $pad*3 0;
       }
     }
     
