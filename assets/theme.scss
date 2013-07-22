@@ -9,7 +9,8 @@ $background: #f1f1f1;
 $pink: #F3AAAA;
 
 $gray: lighten($color, 50%);
-
+$lightgray: #ddd;
+$pinky: lighten($pink, 5%);
 
 
 
@@ -17,6 +18,9 @@ $gray: lighten($color, 50%);
 body {
   color: $color;
   background: $background;
+  
+  font-family: 'Lato', sans-serif;
+  
   
   .container {
     a, a:active, a:visited {
@@ -30,6 +34,12 @@ body {
         width: 60%;
       }
     }
+    
+    
+    blockquote, nav {
+      font-family: 'Old Standard TT', serif;
+    }
+    
     
     article {
       h1, blockquote, aside {
@@ -53,7 +63,6 @@ body {
       }
       
       table, ul, ol, dl, dt, td, th {
-        font-family: 'Lato', sans-serif;
         font-weight: 300;
       }
       
@@ -71,18 +80,23 @@ body {
         }
         
         td {
-          border-bottom: 1px dotted $color;
           color: $pink;
-          
           &.c1 {
             color: $color;
           }
         }
+        
+        td, tbody {
+          @include border($lightgray);
+          border-color: $lightgray;
+        }
       }
       
+      /* For mobile
+      */
       dl {
         dt {
-          border-bottom: 1px dotted $pink;
+          @include border($pinky);
           margin-bottom: $pad/2;
         }
         
@@ -91,21 +105,19 @@ body {
         }
       }
       
+      /* Services
+      */
       ul {
         @include list;
-        list-style: none;
         margin: $pad 0;
         
         li {
-          border-bottom: 1px inset $pink;
+          @include border($lightgray);
           
-          &:before {
-            content: '\2714';
-            color: $pink;
-            margin-right: $pad/2;
+          @include mobile {
+            @include border($pinky);
           }
         }
-        
         
         @include tablet-and-below {
           font-size: $pad;
@@ -127,6 +139,10 @@ body {
       background: url(http://metamn.github.io/cs/assets/background.png) $pink;
       ul {
         @include list;
+        
+        li {
+          @include border($pinky);
+        }
       }
     }
     
@@ -154,26 +170,12 @@ body {
     
     
     footer {
-      font-family: 'Lato', sans-serif;
-      
       h1 {
         padding-bottom: 0;
       }
       h2 {
         padding-top: 0;
       }
-      
-      @include mobile {
-        h1 {
-          padding-top: 0;
-        }
-        
-        h2 {
-          padding-top: $pad*3;
-        }
-      }
-      
-      
       
       form {
         input[type="submit"] {
@@ -187,7 +189,7 @@ body {
       
       #contact {
         a {
-          border-bottom: 1px dotted;
+          @include border;
         }
       }
     }

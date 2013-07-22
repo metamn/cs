@@ -54,6 +54,8 @@ body {
         display: none;
       }
       
+      
+      
       @include small-screen-and-below {
         margin-bottom: $pad;
         
@@ -65,6 +67,26 @@ body {
           width: $major - $margin;
         }
       }
+      
+      @include mobile {
+        h1, h2 {
+          padding-top: 0;
+        }
+        
+        figure {
+          width: 50%;
+        }
+        
+        form {
+          @include block;
+          
+          input[type="submit"] {
+            @include block;
+          }
+        }
+      }
+      
+      
     }
   }
 }

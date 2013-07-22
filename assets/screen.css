@@ -1,665 +1,163 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
+html { line-height: 1; }
 
-/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
+ol, ul { list-style: none; }
 
-/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
-/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 
-/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
+a img { border: none; }
 
-/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 /* Vertical rhythm
 */
 /* The Grid
 */
-/* Responsive mixins
-  - http://paulstamatiou.com/responsive-retina-blog-development-part-1
+/* Responsive mixins - http://paulstamatiou.com/responsive-retina-blog-development-part-1
 */
-@media only screen and (max-width: 380px) {
-  /* line 67, mixins.scss */
-  .mobile {
-    display: block;
-  }
-
-  /* line 68, mixins.scss */
-  .desktop {
-    display: none !important;
-  }
-}
-@media only screen and (min-width: 381px) {
-  /* line 72, mixins.scss */
-  .mobile {
-    display: none;
-  }
-
-  /* line 73, mixins.scss */
-  .desktop {
-    display: block;
-  }
-}
+@media only screen and (max-width: 380px) { .mobile { display: block; }
+  .desktop { display: none !important; } }
+@media only screen and (min-width: 381px) { .mobile { display: none; }
+  .desktop { display: block; } }
 /* Highlighting active navigation item
 */
-/* line 1, typography.scss */
-body {
-  font-family: 'Old Standard TT', serif;
-  font-size: 100%;
-  line-height: 1.25;
-}
-/* line 7, typography.scss */
-body .container {
-  /* Headings
-   -----------------------------------------------
-  */
-  /* Headings dont differ by size but by decoration
-   - vertical rhythm is maintained by padding
-  */
-  /* Block level elements
-  // -----------------------------------------------
-  */
-  /* the second <p> has a top margin */
-  /* blockquote is simply indented, enlarged */
-  /* address is small caps */
-  /* Lists
-  // -----------------------------------------------
-  */
-  /* Tables
-  // -----------------------------------------------
-  */
-  /* Text styles
-  // -----------------------------------------------
-  */
-  /* Forms
-  // -----------------------------------------------
-  */
-  /* Reset browser defaults */
-  /* Text */
-  /* Button */
-  /* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
-    - the checkbox and radio button is not displayed
-    - instead a label is displayed which can be styled with 'content' 
-  */
-  /* Select box 
-    - put inside a <label class="select">
-    - label:after is positioned over the original selectbox arrow
-    - additionally padding & relative positioning must be overwritten later in the new context
-  */
-}
-/* line 17, typography.scss */
-body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5em;
-  padding: 1.25em 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 26, typography.scss */
-body .container h2 {
-  font-weight: 300;
-}
-/* line 37, typography.scss */
-body .container p + p {
-  margin-top: 1.25em;
-}
-/* line 42, typography.scss */
-body .container q, body .container blockquote {
-  display: block;
-  margin: 2.5em;
-  border-left: 1px dotted;
-  padding-left: 1.25em;
-  font-style: italic;
-  font-size: larger;
-}
-/* line 54, typography.scss */
-body .container address {
-  font-variant: small-caps;
-}
-/* line 63, typography.scss */
-body .container ul, body .container menu, body .container dir, body .container ol {
-  margin: 1.25em;
-  list-style-type: square;
-}
-/* line 68, typography.scss */
-body .container ol {
-  list-style-type: decimal;
-}
-/* line 72, typography.scss */
-body .container dl {
-  margin: 1.25em 0;
-}
-/* line 75, typography.scss */
-body .container dl dt {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1.25em 0;
-}
-/* line 80, typography.scss */
-body .container dl dd {
-  margin: 0.3125em;
-  margin-bottom: 0.625em;
-}
-/* line 85, typography.scss */
-body .container dl dd + dt {
-  margin-top: 2.5em;
-}
-/* line 97, typography.scss */
-body .container table {
-  margin: 1.25em 0 2.5em;
-}
-/* line 102, typography.scss */
-body .container table thead tr td {
-  font-weight: bold;
-}
-/* line 108, typography.scss */
-body .container table tbody {
-  border-top: 1px dotted;
-  border-bottom: 1px dotted;
-}
-/* line 113, typography.scss */
-body .container table td, body .container table th, body .container table tr {
-  text-align: left;
-  vertical-align: top;
-  padding: 1.25em;
-}
-/* line 119, typography.scss */
-body .container table td {
-  border-bottom: 1px solid;
-}
-/* line 130, typography.scss */
-body .container em, body .container i {
-  font-style: italic;
-}
-/* line 134, typography.scss */
-body .container strong, body .container b {
-  font-weight: bold;
-}
-/* line 147, typography.scss */
-body .container input, body .container textarea, body .container select {
-  border: none;
-  outline: 0;
-  background: white;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-/* line 158, typography.scss */
-body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea {
-  border: 1px solid transparent;
-  border-bottom: 1px solid;
-  font-style: italic;
-  color: gray;
-}
-/* line 164, typography.scss */
-body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus {
-  color: black;
-  font-style: normal;
-  border: 1px solid #ccc;
-  border-bottom: 1px solid;
-}
-/* line 172, typography.scss */
-body .container input[type='submit'] {
-  background: black;
-  color: lightgray;
-  padding: 0.625em;
-}
-/* line 177, typography.scss */
-body .container input[type='submit']:hover {
-  cursor: pointer;
-  color: white;
-}
-/* line 191, typography.scss */
-body .container input[type='radio'], body .container input[type='checkbox'] {
-  display: none;
-}
-/* line 194, typography.scss */
-body .container input[type='radio'] + label, body .container input[type='checkbox'] + label {
-  display: inline-block;
-}
-/* line 199, typography.scss */
-body .container input[type='radio'] + label:after {
-  content: '\2610';
-  margin-right: 0.625em;
-}
-/* line 203, typography.scss */
-body .container input[type='radio']:checked + label:after {
-  content: '\25a3';
-}
-/* line 208, typography.scss */
-body .container input[type='checkbox'] + label:before {
-  content: '\2610';
-  margin-right: 0.3125em;
-  font-size: 200%;
-  line-height: .5;
-  vertical-align: top;
-  color: lightgray;
-}
-/* line 219, typography.scss */
-body .container input[type='checkbox']:checked + label:before {
-  content: '\2611';
-  color: black;
-}
-/* line 232, typography.scss */
-body .container select {
-  border-bottom: 1px solid gray;
-  cursor: pointer;
-  width: 100%;
-}
-/* line 237, typography.scss */
-body .container label.select:after {
-  content: '\003E';
-  float: right;
-  display: inline-block;
-  padding: 0 .45em;
-  position: relative;
-  left: 0;
-  background: white;
-  pointer-events: none;
-  /* this is a must */
-  cursor: pointer;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-}
+body { font-size: 100%; line-height: 1.25; }
+body .container { /* Headings -----------------------------------------------
+*/ /* Headings dont differ by size but by decoration - vertical rhythm is maintained by padding
+*/ /* Block level elements
+// -----------------------------------------------
+*/ /* the second <p> has a top margin */ /* blockquote is simply indented, enlarged */ /* address is small caps */ /* Lists
+// -----------------------------------------------
+*/ /* Tables
+// -----------------------------------------------
+*/ /* Text styles
+// -----------------------------------------------
+*/ /* Forms
+// -----------------------------------------------
+*/ /* Reset browser defaults */ /* Text */ /* Button */ /* Cross browser compatible styling: http://www.inserthtml.com/2012/06/custom-form-radio-checkbox/ - the checkbox and radio button is not displayed - instead a label is displayed which can be styled with 'content' 
+*/ /* Select box  - put inside a <label class="select"> - label:after is positioned over the original selectbox arrow - additionally padding & relative positioning must be overwritten later in the new context
+*/ }
+body .container h1, body .container h2, body .container h3, body .container h4, body .container h5, body .container h6 { font-size: 1.5em; padding: 1.25em 0; margin-top: 0; margin-bottom: 0; }
+body .container h2 { font-weight: 300; }
+body .container p + p { margin-top: 1.25em; }
+body .container q, body .container blockquote { display: block; margin: 2.5em; border-left: 1px dotted; padding-left: 1.25em; font-style: italic; font-size: larger; }
+body .container address { font-variant: small-caps; }
+body .container ul, body .container menu, body .container dir, body .container ol { margin: 1.25em; list-style-type: square; }
+body .container ol { list-style-type: decimal; }
+body .container dl { margin: 1.25em 0; }
+body .container dl dt { font-weight: bold; text-transform: uppercase; margin: 1.25em 0; }
+body .container dl dd { margin: 0.3125em; margin-bottom: 0.625em; }
+body .container dl dd + dt { margin-top: 2.5em; }
+body .container table { margin: 1.25em 0 2.5em; }
+body .container table thead tr td { font-weight: bold; }
+body .container table tbody { border-top: 1px dotted; border-bottom: 1px dotted; }
+body .container table td, body .container table th, body .container table tr { text-align: left; vertical-align: top; padding: 1.25em; }
+body .container table td { border-bottom: 1px solid; }
+body .container em, body .container i { font-style: italic; }
+body .container strong, body .container b { font-weight: bold; }
+body .container input, body .container textarea, body .container select { border: none; outline: 0; background: white; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
+body .container input[type='text'], body .container input[type='email'], body .container input[type='password'], body .container textarea { border: 1px solid transparent; border-bottom: 1px solid; font-style: italic; color: gray; }
+body .container input[type='text']:focus, body .container input[type='email']:focus, body .container input[type='password']:focus, body .container textarea:focus { color: black; font-style: normal; border: 1px solid #ccc; border-bottom: 1px solid; }
+body .container input[type='submit'] { background: black; color: lightgray; padding: 0.625em; }
+body .container input[type='submit']:hover { cursor: pointer; color: white; }
+body .container input[type='radio'], body .container input[type='checkbox'] { display: none; }
+body .container input[type='radio'] + label, body .container input[type='checkbox'] + label { display: inline-block; }
+body .container input[type='radio'] + label:after { content: '\2610'; margin-right: 0.625em; }
+body .container input[type='radio']:checked + label:after { content: '\25a3'; }
+body .container input[type='checkbox'] + label:before { content: '\2610'; margin-right: 0.3125em; font-size: 200%; line-height: .5; vertical-align: top; color: lightgray; }
+body .container input[type='checkbox']:checked + label:before { content: '\2611'; color: black; }
+body .container select { border-bottom: 1px solid gray; cursor: pointer; width: 100%; }
+body .container label.select:after { content: '\003E'; float: right; display: inline-block; padding: 0 .45em; position: relative; left: 0; background: white; pointer-events: none; /* this is a must */ cursor: pointer; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); }
 
-/* line 3, layout.scss */
-body .container {
-  width: 90%;
-  margin: 0 auto;
-}
-/* line 7, layout.scss */
-body .container section, body .container nav, body .container footer {
-  width: 100%;
-  float: left;
-}
-/* line 11, layout.scss */
-body .container section {
-  width: 75.902%;
-  margin-left: 24.098%;
-}
-@media only screen and (max-width: 767px) {
-  /* line 11, layout.scss */
-  body .container section {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-  }
-}
-/* line 16, layout.scss */
-body .container nav {
-  margin: 2.5em 0;
-}
-@media only screen and (min-width: 1025px) {
-  /* line 16, layout.scss */
-  body .container nav {
-    margin: 6.25em 0;
-  }
-}
-/* line 23, layout.scss */
-body .container nav ul {
-  width: 75.902%;
-  margin-left: 24.098%;
-}
-@media only screen and (max-width: 767px) {
-  /* line 23, layout.scss */
-  body .container nav ul {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 26, layout.scss */
-  body .container nav ul li {
-    margin-left: 2.5em;
-  }
-}
-/* line 36, layout.scss */
-body .container footer figure {
-  width: 19.098%;
-  margin-right: 5%;
-  float: left;
-}
-/* line 42, layout.scss */
-body .container footer figure img {
-  width: 100%;
-  max-width: 11em;
-}
-/* line 48, layout.scss */
-body .container footer form {
-  width: 75.902%;
-  float: left;
-}
-/* line 53, layout.scss */
-body .container footer #contact {
-  display: none;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 35, layout.scss */
-  body .container footer {
-    margin-bottom: 1.25em;
-  }
-  /* line 60, layout.scss */
-  body .container footer figure {
-    width: 38.196%;
-  }
-  /* line 64, layout.scss */
-  body .container footer form {
-    width: 56.804%;
-  }
-}
+body .container { width: 90%; margin: 0 auto; }
+body .container section, body .container nav, body .container footer { width: 100%; float: left; }
+body .container section { width: 75.902%; margin-left: 24.098%; }
+@media only screen and (max-width: 767px) { body .container section { width: 100%; float: left; margin-left: 0; } }
+body .container nav { margin: 2.5em 0; }
+@media only screen and (min-width: 1025px) { body .container nav { margin: 6.25em 0; } }
+body .container nav ul { width: 75.902%; margin-left: 24.098%; }
+@media only screen and (max-width: 767px) { body .container nav ul { width: 100%; float: left; margin-left: 0; } }
+@media only screen and (max-width: 767px) { body .container nav ul li { margin-left: 2.5em; } }
+body .container footer figure { width: 19.098%; margin-right: 5%; float: left; }
+body .container footer figure img { width: 100%; max-width: 11em; }
+body .container footer form { width: 75.902%; float: left; }
+body .container footer #contact { display: none; }
+@media only screen and (max-width: 1023px) { body .container footer { margin-bottom: 1.25em; }
+  body .container footer figure { width: 38.196%; }
+  body .container footer form { width: 56.804%; } }
+@media (max-width: 380px) { body .container footer h1, body .container footer h2 { padding-top: 0; }
+  body .container footer figure { width: 50%; }
+  body .container footer form { width: 100%; float: left; }
+  body .container footer form input[type="submit"] { width: 100%; float: left; } }
 
-/* line 77, layout.scss */
-body.contact .container footer form {
-  display: none;
-}
-/* line 81, layout.scss */
-body.contact .container footer #contact {
-  display: block;
-}
+body.contact .container footer form { display: none; }
+body.contact .container footer #contact { display: block; }
 
 /* The color scheme
 */
-/* line 17, theme.scss */
-body {
-  color: #363636;
-  background: #f1f1f1;
-}
-/* line 21, theme.scss */
-body .container {
-  /* Contact page
-  */
-}
-/* line 22, theme.scss */
-body .container a, body .container a:active, body .container a:visited {
-  color: #363636;
-  text-decoration: none;
-}
-@media only screen and (min-width: 1025px) {
-  /* line 28, theme.scss */
-  body .container h1 {
-    width: 60%;
-  }
-}
-/* line 35, theme.scss */
-body .container article h1, body .container article blockquote, body .container article aside {
-  font-size: 3em;
-  font-weight: 300;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 40, theme.scss */
-  body .container article blockquote {
-    font-size: 1.5em;
-    margin: 0;
-    margin-bottom: 2.5em;
-  }
-}
-/* line 47, theme.scss */
-body .container article h2 {
-  display: none;
-}
-/* line 51, theme.scss */
-body .container article table, body .container article ul, body .container article ol, body .container article aside {
-  font-size: 1.5em;
-}
-/* line 55, theme.scss */
-body .container article table, body .container article ul, body .container article ol, body .container article dl, body .container article dt, body .container article td, body .container article th {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-}
-/* line 61, theme.scss */
-body .container article table td, body .container article table th, body .container article table tr {
-  padding: 0.625em;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 61, theme.scss */
-  body .container article table td, body .container article table th, body .container article table tr {
-    padding: 0.3125em;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 61, theme.scss */
-  body .container article table td, body .container article table th, body .container article table tr {
-    font-size: smaller;
-  }
-}
-/* line 73, theme.scss */
-body .container article table td {
-  border-bottom: 1px dotted #363636;
-  color: #f3aaaa;
-}
-/* line 77, theme.scss */
-body .container article table td.c1 {
-  color: #363636;
-}
-/* line 84, theme.scss */
-body .container article dl dt {
-  border-bottom: 1px dotted #f3aaaa;
-  margin-bottom: 0.625em;
-}
-/* line 89, theme.scss */
-body .container article dl dd {
-  margin: 0;
-}
-/* line 94, theme.scss */
-body .container article ul {
-  padding: 1.25em 0;
-  list-style: none;
-  margin: 1.25em 0;
-}
-/* line 125, mixins.scss */
-body .container article ul li {
-  padding: 0.625em 0;
-  border-bottom: 1px dotted;
-}
-/* line 130, mixins.scss */
-body .container article ul li a:hover {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-}
-/* line 135, mixins.scss */
-body .container article ul li.last {
-  border-bottom: none;
-}
-/* line 99, theme.scss */
-body .container article ul li {
-  border-bottom: 1px inset #f3aaaa;
-}
-/* line 102, theme.scss */
-body .container article ul li:before {
-  content: '\2714';
-  color: #f3aaaa;
-  margin-right: 0.625em;
-}
-@media only screen and (max-width: 767px) {
-  /* line 94, theme.scss */
-  body .container article ul {
-    font-size: 1.25em;
-  }
-}
-/* line 115, theme.scss */
-body .container article figure {
-  margin-bottom: 5em;
-}
-/* line 118, theme.scss */
-body .container article figure figcaption {
-  padding: 0.625em 0;
-  color: #b5b5b5;
-}
-/* line 126, theme.scss */
-body .container nav {
-  background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa;
-}
-/* line 128, theme.scss */
-body .container nav ul {
-  padding: 1.25em 0;
-}
-/* line 125, mixins.scss */
-body .container nav ul li {
-  padding: 0.625em 0;
-  border-bottom: 1px dotted;
-}
-/* line 130, mixins.scss */
-body .container nav ul li a:hover {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-}
-/* line 135, mixins.scss */
-body .container nav ul li.last {
-  border-bottom: none;
-}
-/* line 136, theme.scss */
-body .container ol {
-  margin: 0;
-}
-/* line 139, theme.scss */
-body .container ol input, body .container ol textarea {
-  width: 38.196%;
-  margin-bottom: 1.25em;
-  padding: 0.625em;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 139, theme.scss */
-  body .container ol input, body .container ol textarea {
-    width: 94%;
-  }
-}
-/* line 150, theme.scss */
-body .container ol input[type="submit"] {
-  width: 10em;
-}
-/* line 156, theme.scss */
-body .container footer {
-  font-family: 'Lato', sans-serif;
-}
-/* line 159, theme.scss */
-body .container footer h1 {
-  padding-bottom: 0;
-}
-/* line 162, theme.scss */
-body .container footer h2 {
-  padding-top: 0;
-}
-@media (max-width: 380px) {
-  /* line 167, theme.scss */
-  body .container footer h1 {
-    padding-top: 0;
-  }
-  /* line 171, theme.scss */
-  body .container footer h2 {
-    padding-top: 3.75em;
-  }
-}
-/* line 179, theme.scss */
-body .container footer form input[type="submit"] {
-  font-size: large;
-  padding: 0.625em 1.25em;
-  background: #363636;
-  color: #f1f1f1;
-}
-/* line 189, theme.scss */
-body .container footer #contact a {
-  border-bottom: 1px dotted;
-}
+body { color: #363636; background: #f1f1f1; font-family: 'Lato', sans-serif; }
+body .container { /* Contact page
+*/ }
+body .container a, body .container a:active, body .container a:visited { color: #363636; text-decoration: none; }
+@media only screen and (min-width: 1025px) { body .container h1 { width: 60%; } }
+body .container blockquote, body .container nav { font-family: 'Old Standard TT', serif; }
+body .container article { /* For mobile
+*/ /* Services
+*/ }
+body .container article h1, body .container article blockquote, body .container article aside { font-size: 3em; font-weight: 300; }
+@media only screen and (max-width: 1023px) { body .container article blockquote { font-size: 1.5em; margin: 0; margin-bottom: 2.5em; } }
+body .container article h2 { display: none; }
+body .container article table, body .container article ul, body .container article ol, body .container article aside { font-size: 1.5em; }
+body .container article table, body .container article ul, body .container article ol, body .container article dl, body .container article dt, body .container article td, body .container article th { font-weight: 300; }
+body .container article table td, body .container article table th, body .container article table tr { padding: 0.625em; }
+@media only screen and (max-width: 1023px) { body .container article table td, body .container article table th, body .container article table tr { padding: 0.3125em; } }
+@media only screen and (max-width: 767px) { body .container article table td, body .container article table th, body .container article table tr { font-size: smaller; } }
+body .container article table td { color: #f3aaaa; }
+body .container article table td.c1 { color: #363636; }
+body .container article table td, body .container article table tbody { border-bottom: 1px dotted #dddddd; border-color: #dddddd; }
+body .container article dl dt { border-bottom: 1px dotted #f6c0c0; margin-bottom: 0.625em; }
+body .container article dl dd { margin: 0; }
+body .container article ul { padding: 1.25em 0; list-style: none; margin: 1.25em 0; }
+body .container article ul li { padding: 0.625em 0; }
+body .container article ul li a:hover { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+body .container article ul li.last { border-bottom: none; }
+body .container article ul li { border-bottom: 1px dotted #dddddd; }
+@media (max-width: 380px) { body .container article ul li { border-bottom: 1px dotted #f6c0c0; } }
+@media only screen and (max-width: 767px) { body .container article ul { font-size: 1.25em; } }
+body .container article figure { margin-bottom: 5em; }
+body .container article figure figcaption { padding: 0.625em 0; color: #b5b5b5; }
+body .container nav { background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa; }
+body .container nav ul { padding: 1.25em 0; list-style: none; }
+body .container nav ul li { padding: 0.625em 0; }
+body .container nav ul li a:hover { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+body .container nav ul li.last { border-bottom: none; }
+body .container nav ul li { border-bottom: 1px dotted #f6c0c0; }
+body .container ol { margin: 0; }
+body .container ol input, body .container ol textarea { width: 38.196%; margin-bottom: 1.25em; padding: 0.625em; }
+@media only screen and (max-width: 1023px) { body .container ol input, body .container ol textarea { width: 94%; } }
+body .container ol input[type="submit"] { width: 10em; }
+body .container footer h1 { padding-bottom: 0; }
+body .container footer h2 { padding-top: 0; }
+body .container footer form input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
+body .container footer #contact a { border-bottom: 1px dotted #363636; }
 
 /* Highlight menu
 */
-/* line 205, theme.scss */
-body.identity .container nav li#identity a {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-}
+body.identity .container nav li#identity a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
-/* line 217, theme.scss */
-body.design .container nav li#design a {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-}
+body.design .container nav li#design a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
-/* line 229, theme.scss */
-body.development .container nav li#development a {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-}
+body.development .container nav li#development a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
-/* line 241, theme.scss */
-body.services .container nav li#services a {
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 0.625em;
-}
+body.services .container nav li#services a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
-/* line 1, common.scss */
-.outline {
-  display: none;
-}
+.outline { display: none; }
 
-/* line 5, common.scss */
-img {
-  max-width: 100%;
-}
+img { max-width: 100%; }

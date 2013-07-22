@@ -12,4 +12,10 @@
 2013-07-20
 * 2.0hrs, 08.30 - 10.00, Responsiveness done
 
+2013-07-21
+* 2.0hrs, 10.00 - 12.00, Deployment
+
+2013-07-22
+* , 11.00 - , Making the design fit
+
 
