@@ -127,6 +127,10 @@ body {
       figure {
         margin-bottom: $pad*4;
         
+        img {
+          @include box-shadow(rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px  inset);
+        }
+        
         figcaption {
           padding: $pad/2 0;
           color: $gray;

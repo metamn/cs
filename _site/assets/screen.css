@@ -132,6 +132,7 @@ body .container article ul li { border-bottom: 1px dotted #dddddd; }
 @media (max-width: 380px) { body .container article ul li { border-bottom: 1px dotted #f6c0c0; } }
 @media only screen and (max-width: 767px) { body .container article ul { font-size: 1.25em; } }
 body .container article figure { margin-bottom: 5em; }
+body .container article figure img { -webkit-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; -moz-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; }
 body .container article figure figcaption { padding: 0.625em 0; color: #b5b5b5; }
 body .container nav { background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa; }
 body .container nav ul { padding: 1.25em 0; list-style: none; }
