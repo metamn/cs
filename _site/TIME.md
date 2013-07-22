@@ -16,6 +16,8 @@
 * 2.0hrs, 10.00 - 12.00, Deployment
 
 2013-07-22
-* , 11.00 - , Making the design fit
+* 2.0hrs, 11.00 - 13.00, Making the design fit
+* 1.5hrs, 14:30 - 16.00, Reshaping images
+ 
 
 
