@@ -202,6 +202,129 @@ body {
 
 
 
+body.text {
+  .container {
+    article {
+      
+      /* Make it readable
+      */
+      max-width: 700px;
+      line-height: 1.5;
+      font-size: 1.25em;
+      font-weight: 300;
+      
+      ol, ul {
+        font-size: 100%;
+        
+        margin-left: $pad;
+        margin-bottom: $pad*2;
+      }
+      
+      ul {
+        list-style: square;
+      }
+      
+            
+      
+      /* Adjust visual hierarchy
+      */
+      h3 {
+        padding-bottom: 0;
+      }  
+      
+      h1, h2, h3, h4 {
+        line-height: 1.1;
+        display: block;
+      }
+      
+      h4 {
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: bold;
+      }
+      
+      article {
+        margin-top: 0;
+      } 
+      
+      
+      
+      /* Restore expectations
+      */
+      a, a:active, a:visited {
+        border-bottom: 1px dotted;
+      }
+      
+      
+      /* Decorations 
+      */
+      
+      /* Highlight text
+      */
+      span {
+        background: $lightgray;
+        padding: $pad/8;
+        
+        font-style: italic;
+      }
+      
+      p {
+        /* Separate content blocks
+        */
+        &.separator {
+          text-align: center;
+          
+          &:after {
+            content: '* * *';
+          }
+        }
+      }
+      
+      table, td, th, tr {
+        font-size: 100%;
+      }
+      
+      td {
+        border-color: $lightgray;
+        color: $color;
+      }
+      
+      @include mobile {
+        table {
+          td, th, tr {
+            padding: $pad/4;
+          }
+        }
+      }
+      
+      
+      /* Images
+      */
+      figure {
+        margin-bottom: $pad*2;
+        
+        @include small-screen-and-up {
+          display: inline-block;
+          max-width: 65em;
+        }
+        
+        a {
+          border-bottom: none;
+        }
+        
+      }
+      
+      p + figure, figure + p {
+        margin-top: $pad;
+      }
+      
+      
+    }
+  }
+}
+
+
+
 /* Highlight menu
 */
 body.identity {
@@ -244,6 +367,18 @@ body.services {
   .container {
     nav {
       li#services {
+        a {
+          @include highlight;
+        }
+      }
+    }
+  }
+}
+
+body.manifesto {
+  .container {
+    nav {
+      li#manifesto {
         a {
           @include highlight;
         }

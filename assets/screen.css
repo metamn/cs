@@ -149,6 +149,33 @@ body .container footer h2 { padding-top: 0; }
 body .container footer form input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
 body .container footer #contact a { border-bottom: 1px dotted #363636; }
 
+body.text .container article { /* Make it readable
+*/ max-width: 700px; line-height: 1.5; font-size: 1.25em; font-weight: 300; /* Adjust visual hierarchy
+*/ /* Restore expectations
+*/ /* Decorations 
+*/ /* Highlight text
+*/ /* Images
+*/ }
+body.text .container article ol, body.text .container article ul { font-size: 100%; margin-left: 1.25em; margin-bottom: 2.5em; }
+body.text .container article ul { list-style: square; }
+body.text .container article h3 { padding-bottom: 0; }
+body.text .container article h1, body.text .container article h2, body.text .container article h3, body.text .container article h4 { line-height: 1.1; display: block; }
+body.text .container article h4 { text-transform: uppercase; font-size: 1em; font-weight: bold; }
+body.text .container article article { margin-top: 0; }
+body.text .container article a, body.text .container article a:active, body.text .container article a:visited { border-bottom: 1px dotted; }
+body.text .container article span { background: #dddddd; padding: 0.15625em; font-style: italic; }
+body.text .container article p { /* Separate content blocks
+*/ }
+body.text .container article p.separator { text-align: center; }
+body.text .container article p.separator:after { content: '* * *'; }
+body.text .container article table, body.text .container article td, body.text .container article th, body.text .container article tr { font-size: 100%; }
+body.text .container article td { border-color: #dddddd; color: #363636; }
+@media (max-width: 380px) { body.text .container article table td, body.text .container article table th, body.text .container article table tr { padding: 0.3125em; } }
+body.text .container article figure { margin-bottom: 2.5em; }
+@media only screen and (min-width: 1025px) { body.text .container article figure { display: inline-block; max-width: 65em; } }
+body.text .container article figure a { border-bottom: none; }
+body.text .container article p + figure, body.text .container article figure + p { margin-top: 1.25em; }
+
 /* Highlight menu
 */
 body.identity .container nav li#identity a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
@@ -158,6 +185,8 @@ body.design .container nav li#design a { font-weight: bold; letter-spacing: 1px;
 body.development .container nav li#development a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
 body.services .container nav li#services a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+
+body.manifesto .container nav li#manifesto a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
 .outline { display: none; }
 
