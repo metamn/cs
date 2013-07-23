@@ -18,6 +18,9 @@
 2013-07-22
 * 2.0hrs, 11.00 - 13.00, Making the design fit
 * 1.5hrs, 14:30 - 16.00, Reshaping images
- 
+
+
+2013-07-23
+* 1.0hrs, 10.00 - 11.00, Adding Manisfesto 
 
 
