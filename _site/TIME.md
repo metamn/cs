@@ -16,11 +16,16 @@
 * 2.0hrs, 10.00 - 12.00, Deployment
 
 2013-07-22
-* 2.0hrs, 11.00 - 13.00, Making the design fit
+* 2.0hrs, 11.00 - 13.00, Making the design fit (Refactoring)
 * 1.5hrs, 14:30 - 16.00, Reshaping images
 
-
 2013-07-23
-* 1.0hrs, 10.00 - 11.00, Adding Manisfesto 
+* 1.0hrs, 10.00 - 11.00, Adding Manifesto
+* 1.0hrs, 15.00 - 16.00, Setting up domain
+
+2013-07-24
+* 1.0hrs, 05.45 - 06.45, Rewriting Services, reducing image sizes
+
+
 
 
