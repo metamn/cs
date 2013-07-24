@@ -110,6 +110,7 @@ body {
       ul {
         @include list;
         margin: $pad 0;
+        max-width: 700px;
         
         li {
           @include border($lightgray);
@@ -322,6 +323,7 @@ body.text {
     }
   }
 }
+
 
 
 

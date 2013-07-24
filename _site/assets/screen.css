@@ -124,7 +124,7 @@ body .container article table td.c1 { color: #363636; }
 body .container article table td, body .container article table tbody { border-bottom: 1px dotted #dddddd; border-color: #dddddd; }
 body .container article dl dt { border-bottom: 1px dotted #f6c0c0; margin-bottom: 0.625em; }
 body .container article dl dd { margin: 0; }
-body .container article ul { padding: 1.25em 0; list-style: none; margin: 1.25em 0; }
+body .container article ul { padding: 1.25em 0; list-style: none; margin: 1.25em 0; max-width: 700px; }
 body .container article ul li { padding: 0.625em 0; }
 body .container article ul li a:hover { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 body .container article ul li.last { border-bottom: none; }
