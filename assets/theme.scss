@@ -37,6 +37,14 @@ body {
       font-family: 'Old Standard TT', serif;
     }
     
+    input[type="submit"] {
+      font-size: large;
+      padding: $pad/2 $pad;
+      
+      background: $color;
+      color: $background;
+    }
+    
     
     article {
       h1, blockquote, aside {
@@ -140,6 +148,7 @@ body {
         }
       }
       
+      
     }
     
     
@@ -162,16 +171,6 @@ body {
       }
       h2 {
         padding-top: 0;
-      }
-      
-      form {
-        input[type="submit"] {
-          font-size: large;
-          padding: $pad/2 $pad;
-          
-          background: $color;
-          color: $background;
-        }
       }
       
       #contact {

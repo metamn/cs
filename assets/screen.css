@@ -108,6 +108,7 @@ body { color: #363636; background: #f1f1f1; font-family: 'Lato', sans-serif; }
 body .container a, body .container a:active, body .container a:visited { color: #363636; text-decoration: none; }
 @media only screen and (min-width: 1025px) { body .container h1 { width: 60%; } }
 body .container blockquote, body .container nav { font-family: 'Old Standard TT', serif; }
+body .container input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
 body .container article h1, body .container article blockquote, body .container article aside { font-size: 3em; font-weight: 300; }
 @media only screen and (max-width: 1023px) { body .container article blockquote { font-size: larger; margin: 0; margin-bottom: 2.5em; } }
 body .container article table td, body .container article table th, body .container article table tr { padding: 0.625em; font-size: larger; font-weight: 300; }
@@ -135,7 +136,6 @@ body .container nav ul li.last { border-bottom: none; }
 body .container nav ul li { border-bottom: 1px dotted #f6c0c0; }
 body .container footer h1 { padding-bottom: 0; }
 body .container footer h2 { padding-top: 0; }
-body .container footer form input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
 body .container footer #contact a { border-bottom: 1px dotted #363636; }
 
 body.text .container article { /* Make it readable
