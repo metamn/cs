@@ -81,7 +81,8 @@ body .container section, body .container nav, body .container footer { width: 10
 body .container section { width: 75.902%; margin-left: 24.098%; }
 @media only screen and (max-width: 767px) { body .container section { width: 100%; float: left; margin-left: 0; } }
 body .container nav { margin: 2.5em 0; }
-@media only screen and (min-width: 1025px) { body .container nav { margin: 6.25em 0; } }
+@media only screen and (min-width: 1025px) { body .container nav { margin: 10em 0 5em; } }
+@media only screen and (min-width: 1401px) { body .container nav { margin: 15em 0 5em; } }
 body .container nav ul { width: 75.902%; margin-left: 24.098%; }
 @media only screen and (max-width: 767px) { body .container nav ul { width: 100%; float: left; margin-left: 0; } }
 @media only screen and (max-width: 767px) { body .container nav ul li { margin-left: 2.5em; } }
@@ -93,9 +94,10 @@ body .container footer #contact { display: none; }
   body .container footer figure { width: 38.196%; }
   body .container footer form { width: 56.804%; } }
 @media (max-width: 380px) { body .container footer h1, body .container footer h2 { padding-top: 0; }
-  body .container footer figure { width: 50%; }
+  body .container footer figure { width: 50%; margin-top: 0.625em; }
   body .container footer form { width: 100%; float: left; }
   body .container footer form input[type="submit"] { width: 100%; float: left; } }
+@media only screen and (min-width: 381px) and (max-width: 767px) and (orientation: landscape) { body .container footer h1 { padding-top: 0.625em; } }
 
 body.contact .container footer form { display: none; }
 body.contact .container footer #contact { display: block; }
@@ -103,47 +105,34 @@ body.contact .container footer #contact { display: block; }
 /* The color scheme
 */
 body { color: #363636; background: #f1f1f1; font-family: 'Lato', sans-serif; }
-body .container { /* Contact page
-*/ }
 body .container a, body .container a:active, body .container a:visited { color: #363636; text-decoration: none; }
 @media only screen and (min-width: 1025px) { body .container h1 { width: 60%; } }
 body .container blockquote, body .container nav { font-family: 'Old Standard TT', serif; }
-body .container article { /* For mobile
-*/ /* Services
-*/ }
 body .container article h1, body .container article blockquote, body .container article aside { font-size: 3em; font-weight: 300; }
-@media only screen and (max-width: 1023px) { body .container article blockquote { font-size: 1.5em; margin: 0; margin-bottom: 2.5em; } }
-body .container article h2 { display: none; }
-body .container article table, body .container article ul, body .container article ol, body .container article aside { font-size: 1.5em; }
-body .container article table, body .container article ul, body .container article ol, body .container article dl, body .container article dt, body .container article td, body .container article th { font-weight: 300; }
-body .container article table td, body .container article table th, body .container article table tr { padding: 0.625em; }
+@media only screen and (max-width: 1023px) { body .container article blockquote { font-size: larger; margin: 0; margin-bottom: 2.5em; } }
+body .container article table td, body .container article table th, body .container article table tr { padding: 0.625em; font-size: larger; font-weight: 300; }
 @media only screen and (max-width: 1023px) { body .container article table td, body .container article table th, body .container article table tr { padding: 0.3125em; } }
-@media only screen and (max-width: 767px) { body .container article table td, body .container article table th, body .container article table tr { font-size: smaller; } }
+@media only screen and (max-width: 767px) { body .container article table td, body .container article table th, body .container article table tr { font-size: 100%; } }
 body .container article table td { color: #f3aaaa; }
 body .container article table td.c1 { color: #363636; }
 body .container article table td, body .container article table tbody { border-bottom: 1px dotted #dddddd; border-color: #dddddd; }
-body .container article dl dt { border-bottom: 1px dotted #f6c0c0; margin-bottom: 0.625em; }
+body .container article dl { margin-bottom: 2.5em; font-size: larger; font-weight: 300; }
+body .container article dl dt { border-bottom: 1px dotted #f6c0c0; margin-bottom: 0.625em; font-weight: 300; }
 body .container article dl dd { margin: 0; }
-body .container article ul { padding: 1.25em 0; list-style: none; margin: 1.25em 0; max-width: 700px; }
-body .container article ul li { padding: 0.625em 0; }
-body .container article ul li a:hover { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
-body .container article ul li.last { border-bottom: none; }
-body .container article ul li { border-bottom: 1px dotted #dddddd; }
-@media (max-width: 380px) { body .container article ul li { border-bottom: 1px dotted #f6c0c0; } }
-@media only screen and (max-width: 767px) { body .container article ul { font-size: 1.25em; } }
+@media only screen and (min-width: 1401px) { body .container article dl { font-size: 125%; } }
 body .container article figure { margin-bottom: 5em; }
 body .container article figure img { -webkit-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; -moz-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; }
 body .container article figure figcaption { padding: 0.625em 0; color: #b5b5b5; }
+body .container article form ol { margin: 0; }
+body .container article form ol input, body .container article form ol textarea { width: 38.196%; margin-bottom: 1.25em; padding: 0.625em; }
+@media only screen and (max-width: 1023px) { body .container article form ol input, body .container article form ol textarea { width: 94%; } }
+body .container article form ol input[type="submit"] { width: 10em; }
 body .container nav { background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa; }
 body .container nav ul { padding: 1.25em 0; list-style: none; }
 body .container nav ul li { padding: 0.625em 0; }
 body .container nav ul li a:hover { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 body .container nav ul li.last { border-bottom: none; }
 body .container nav ul li { border-bottom: 1px dotted #f6c0c0; }
-body .container ol { margin: 0; }
-body .container ol input, body .container ol textarea { width: 38.196%; margin-bottom: 1.25em; padding: 0.625em; }
-@media only screen and (max-width: 1023px) { body .container ol input, body .container ol textarea { width: 94%; } }
-body .container ol input[type="submit"] { width: 10em; }
 body .container footer h1 { padding-bottom: 0; }
 body .container footer h2 { padding-top: 0; }
 body .container footer form input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
@@ -170,7 +159,7 @@ body.text .container article p.separator { text-align: center; }
 body.text .container article p.separator:after { content: '* * *'; }
 body.text .container article table, body.text .container article td, body.text .container article th, body.text .container article tr { font-size: 100%; }
 body.text .container article td { border-color: #dddddd; color: #363636; }
-@media (max-width: 380px) { body.text .container article table td, body.text .container article table th, body.text .container article table tr { padding: 0.3125em; } }
+@media (max-width: 380px) { body.text .container article table td, body.text .container article table th, body.text .container article table tr { padding: 0.3125em; font-size: 90%; } }
 body.text .container article figure { margin-bottom: 2.5em; }
 @media only screen and (min-width: 1025px) { body.text .container article figure { display: inline-block; max-width: 65em; } }
 body.text .container article figure a { border-bottom: none; }
@@ -178,13 +167,11 @@ body.text .container article p + figure, body.text .container article figure + p
 
 /* Highlight menu
 */
-body.identity .container nav li#identity a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
-
 body.design .container nav li#design a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
 body.development .container nav li#development a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
-body.services .container nav li#services a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
+body.values .container nav li#values a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 
 body.manifesto .container nav li#manifesto a { font-weight: bold; letter-spacing: 1px; padding: 0.625em; }
 

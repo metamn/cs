@@ -21,20 +21,17 @@ body {
   
   font-family: 'Lato', sans-serif;
   
-  
   .container {
     a, a:active, a:visited {
       color: $color;
       text-decoration: none;
     }
     
-    
     h1 {
       @include small-screen-and-up {
         width: 60%;
       }
     }
-    
     
     blockquote, nav {
       font-family: 'Old Standard TT', serif;
@@ -48,34 +45,26 @@ body {
       
       @include small-screen-and-below {
         blockquote {
-          font-size: 1.5em;
+          font-size: larger;
           margin: 0;
           margin-bottom: $pad*2;
         }
       }
       
-      h2 {
-        display: none;
-      }
-      
-      table, ul, ol, aside {
-        font-size: 1.5em;
-      }
-      
-      table, ul, ol, dl, dt, td, th {
-        font-weight: 300;
-      }
       
       table {
         td, th, tr {
           padding: $pad/2;
+          
+          font-size: larger;
+          font-weight: 300;
           
           @include small-screen-and-below {
             padding: $pad/4;
           }
           
           @include tablet-and-below {
-            font-size: smaller;
+            font-size: 100%;
           }
         }
         
@@ -92,38 +81,29 @@ body {
         }
       }
       
-      /* For mobile
-      */
+      
       dl {
+        margin-bottom: $pad*2;
+        
+        font-size: larger;
+        font-weight: 300;
+        
         dt {
           @include border($pinky);
           margin-bottom: $pad/2;
+          
+          font-weight: 300;
         }
         
         dd {
           margin: 0;
         }
+        
+        @include big-screen {
+          font-size: 125%;
+        }
       }
       
-      /* Services
-      */
-      ul {
-        @include list;
-        margin: $pad 0;
-        max-width: 700px;
-        
-        li {
-          @include border($lightgray);
-          
-          @include mobile {
-            @include border($pinky);
-          }
-        }
-        
-        @include tablet-and-below {
-          font-size: $pad;
-        }
-      }
       
       figure {
         margin-bottom: $pad*4;
@@ -137,6 +117,29 @@ body {
           color: $gray;
         }
       }
+      
+      
+      form {
+        ol {
+          margin: 0;
+          
+          input, textarea {
+            width: $minor;
+            
+            @include small-screen-and-below {
+              width: 94%;
+            }
+              
+            margin-bottom: $pad;
+            padding: $pad/2;
+          }
+          
+          input[type="submit"] {
+            width: 10em;
+          }
+        }
+      }
+      
     }
     
     
@@ -151,27 +154,6 @@ body {
       }
     }
     
-    
-    /* Contact page
-    */
-    ol {
-      margin: 0;
-      
-      input, textarea {
-        width: $minor;
-        
-        @include small-screen-and-below {
-          width: 94%;
-        }
-          
-        margin-bottom: $pad;
-        padding: $pad/2;
-      }
-      
-      input[type="submit"] {
-        width: 10em;
-      }
-    }
     
     
     footer {
@@ -198,6 +180,8 @@ body {
         }
       }
     }
+    
+    
   }
 }
 
@@ -294,6 +278,7 @@ body.text {
         table {
           td, th, tr {
             padding: $pad/4;
+            font-size: 90%;
           }
         }
       }
@@ -329,17 +314,6 @@ body.text {
 
 /* Highlight menu
 */
-body.identity {
-  .container {
-    nav {
-      li#identity {
-        a {
-          @include highlight;
-        }
-      }
-    }
-  }
-}
 
 body.design {
   .container {
@@ -365,10 +339,10 @@ body.development {
   }
 }
 
-body.services {
+body.values {
   .container {
     nav {
-      li#services {
+      li#values {
         a {
           @include highlight;
         }

@@ -17,7 +17,11 @@ body {
       margin: $pad*2 0;
       
       @include small-screen-and-up {
-        margin: $pad*5 0;
+        margin: $pad*8 0 $pad*4;
+      }
+      
+      @include big-screen {
+         margin: $pad*12 0 $pad*4;
       }
       
       ul {
@@ -55,7 +59,6 @@ body {
       }
       
       
-      
       @include small-screen-and-below {
         margin-bottom: $pad;
         
@@ -75,6 +78,7 @@ body {
         
         figure {
           width: 50%;
+          margin-top: $pad/2;
         }
         
         form {
@@ -83,6 +87,12 @@ body {
           input[type="submit"] {
             @include block;
           }
+        }
+      }
+      
+      @include mobile-landscape {
+        h1 {
+          padding-top: $pad/2;
         }
       }
       
