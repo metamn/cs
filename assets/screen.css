@@ -124,10 +124,10 @@ body .container article dl dd { margin: 0; }
 body .container article figure { margin-bottom: 5em; }
 body .container article figure img { -webkit-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; -moz-box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; box-shadow: rgba(0, 0, 0, 0.698) 0 10px 25px -10px, rgba(0, 0, 0, 0.1) 0 1px, rgba(0, 0, 0, 0.1) 0 0 4px inset; }
 body .container article figure figcaption { padding: 0.625em 0; color: #b5b5b5; }
-body .container article form ol { margin: 0; }
-body .container article form ol input, body .container article form ol textarea { width: 38.196%; margin-bottom: 1.25em; padding: 0.625em; }
-@media only screen and (max-width: 1023px) { body .container article form ol input, body .container article form ol textarea { width: 94%; } }
-body .container article form ol input[type="submit"] { width: 10em; }
+body .container article form p { margin: 0; }
+body .container article form p input, body .container article form p textarea { width: 38.196%; margin-bottom: 1.25em; padding: 0.625em; }
+@media only screen and (max-width: 1023px) { body .container article form p input, body .container article form p textarea { width: 94%; } }
+body .container article form p input[type="submit"] { width: 10em; }
 body .container nav { background: url(http://metamn.github.io/cs/assets/background.png) #f3aaaa; }
 body .container nav ul { padding: 1.25em 0; list-style: none; }
 body .container nav ul li { padding: 0.625em 0; }
