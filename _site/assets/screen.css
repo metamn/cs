@@ -109,8 +109,8 @@ body .container a, body .container a:active, body .container a:visited { color: 
 @media only screen and (min-width: 1025px) { body .container h1 { width: 60%; } }
 body .container blockquote, body .container nav { font-family: 'Old Standard TT', serif; }
 body .container input[type="submit"] { font-size: large; padding: 0.625em 1.25em; background: #363636; color: #f1f1f1; }
-body .container article h1, body .container article blockquote, body .container article aside { font-size: 3em; font-weight: 300; }
-@media only screen and (max-width: 1023px) { body .container article blockquote { font-size: larger; margin: 0; margin-bottom: 2.5em; } }
+body .container article h1, body .container article aside { font-size: 3em; font-weight: 300; }
+body .container article blockquote { font-size: larger; margin: 0; margin-bottom: 2.5em; font-style: normal; }
 body .container article table td, body .container article table th, body .container article table tr { padding: 0.625em; font-size: larger; font-weight: 300; }
 @media only screen and (max-width: 1023px) { body .container article table td, body .container article table th, body .container article table tr { padding: 0.3125em; } }
 @media only screen and (max-width: 767px) { body .container article table td, body .container article table th, body .container article table tr { font-size: 100%; } }

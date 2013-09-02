@@ -47,16 +47,16 @@ body {
     
     
     article {
-      h1, blockquote, aside {
+      h1, aside {
         @include large-fonts;
       }
       
-      @include small-screen-and-below {
-        blockquote {
-          font-size: larger;
-          margin: 0;
-          margin-bottom: $pad*2;
-        }
+      blockquote {
+        font-size: larger;
+        margin: 0;
+        margin-bottom: $pad*2;
+        
+        font-style: normal;
       }
       
       
